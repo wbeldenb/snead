@@ -6,6 +6,9 @@ from urllib.request import urlopen
 from urllib.request import urlretrieve
 from bs4 import BeautifulSoup
 import json
+import random
+
+random.seed(100)
 
 #Based on solution here: https://gist.github.com/stephenhouser/c5e2b921c3770ed47eb3b75efbc94799
 def get_soup(url,header):
@@ -25,6 +28,7 @@ def scrape(url, shoe_model):
         html = urlopen(url)
         soup = BeautifulSoup(html, 'html.parser')
         imgs = soup.findAll('img')
+        print(imgs)
 
     os.chdir("shoe_images")
     try:
@@ -37,11 +41,14 @@ def scrape(url, shoe_model):
                 mad = json.loads(img["mad"])
                 imgUrl = mad["turl"]
             else:
-                imgUrl = img["src"]
+                try:
+                    imgUrl = img["src"]
+                except:
+                    continue
                 if "https:" not in imgUrl:
                     imgUrl = "https:" + imgUrl
                 
-            path = os.path.join(os.getcwd() + "\\" + "shoe_images\\" + shoe_model, os.path.basename(imgUrl)).replace("\\", "/").replace("?", "")
+            path = os.path.join(os.getcwd() + "\\" + "shoe_images\\" + shoe_model, str( int (random.random() * 1000)) + os.path.basename(imgUrl)) .replace("\\", "/").replace("?", "")
             
             if ".png" not in path or ".jpg" not in path:
                 path = path + ".png"
@@ -76,7 +83,7 @@ if __name__ == '__main__':
         if(folder == "q"):
             break
         try:
-            scrape(url, folder)
+            scrape(url, folder.upper())
         except Exception as e:
             print(str(e))
             traceback.print_exc()
