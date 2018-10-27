@@ -1,26 +1,63 @@
 import os
+import traceback
 import sys
 import urllib
 from urllib.request import urlopen
 from urllib.request import urlretrieve
 from bs4 import BeautifulSoup
+import json
+
+#Based on solution here: https://gist.github.com/stephenhouser/c5e2b921c3770ed47eb3b75efbc94799
+def get_soup(url,header):
+    return BeautifulSoup(urllib.request.urlopen(
+        urllib.request.Request(url,headers=header)),
+        'html.parser')
 
 #Based on solution here: https://stackoverflow.com/questions/18497840/beautifulsoup-how-to-open-images-and-download-them/18498480
-def scrape(url, shoe_model):    
-    html = urlopen(url)
-    soup = BeautifulSoup(html, 'html.parser')
-    imgs = soup.findAll('img')
+def scrape(url, shoe_model):   
+    bing = False
+    if "bing" in url:
+        header={'User-Agent':"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36"}
+        soup = get_soup(url, header)
+        imgs = soup.findAll("a", {"class":"iusc"})
+        bing = True
+    else:
+        html = urlopen(url)
+        soup = BeautifulSoup(html, 'html.parser')
+        imgs = soup.findAll('img')
 
     os.chdir("shoe_images")
-    os.mkdir(shoe_model)
+    try:
+        os.mkdir(shoe_model)
+    except:
+        print("Shoe model folder already exist")
     os.chdir("..")
     for img in imgs:
-            imgUrl = img['src']
-            if "https:" not in imgUrl:
-                imgUrl = "https:" + imgUrl
-            path = os.path.join(os.getcwd() + '\\' + "shoe_images\\" + shoe_model, os.path.basename(imgUrl))
-            urlretrieve(imgUrl, path)
-            print(os.path.basename(imgUrl))
+            if (bing):
+                mad = json.loads(img["mad"])
+                imgUrl = mad["turl"]
+            else:
+                imgUrl = img["src"]
+                if "https:" not in imgUrl:
+                    imgUrl = "https:" + imgUrl
+                
+            path = os.path.join(os.getcwd() + "\\" + "shoe_images\\" + shoe_model, os.path.basename(imgUrl)).replace("\\", "/").replace("?", "")
+            
+            if ".png" not in path or ".jpg" not in path:
+                path = path + ".png"
+
+            try:
+                if(bing):
+                    urlretrieve(imgUrl, path)
+                else:
+                    raw_img = urllib.request.urlopen(imgUrl).read()
+                    f = open(path, 'wb')
+                    f.write(raw_img)
+                    f.close()
+                print(os.path.basename(imgUrl))
+            except:
+                print("Could not get image: " + imgUrl)
+                traceback.print_exc()
 
 if __name__ == '__main__':
     run = True
@@ -42,4 +79,6 @@ if __name__ == '__main__':
             scrape(url, folder)
         except Exception as e:
             print(str(e))
+            traceback.print_exc()
+            print(url)
             print("Error with scraping. Try again")
