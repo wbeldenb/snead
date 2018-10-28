@@ -17,7 +17,13 @@ def get_soup(url,header):
         'html.parser')
 
 #Based on solution here: https://stackoverflow.com/questions/18497840/beautifulsoup-how-to-open-images-and-download-them/18498480
-def scrape(url, shoe_model):   
+def scrape(url, train, shoe_model):   
+    train_or_valid = None
+    if train:
+        train_or_valid = "train"
+    else:
+        train_or_valid = "validation"
+    
     bing = False
     if "bing" in url:
         header={'User-Agent':"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36"}
@@ -29,13 +35,13 @@ def scrape(url, shoe_model):
         soup = BeautifulSoup(html, 'html.parser')
         imgs = soup.findAll('img')
         print(imgs)
-
-    os.chdir("shoe_images")
+    
+    os.chdir("data/" + train_or_valid)
     try:
         os.mkdir(shoe_model)
     except:
         print("Shoe model folder already exist")
-    os.chdir("..")
+    os.chdir("../..")
     for img in imgs:
             if (bing):
                 mad = json.loads(img["mad"])
@@ -48,7 +54,7 @@ def scrape(url, shoe_model):
                 if "https:" not in imgUrl:
                     imgUrl = "https:" + imgUrl
                 
-            path = os.path.join(os.getcwd() + "\\" + "shoe_images\\" + shoe_model, str( int (random.random() * 1000)) + os.path.basename(imgUrl)) .replace("\\", "/").replace("?", "")
+            path = os.path.join(os.getcwd() + "\\" + "data\\" + train_or_valid + "\\" + shoe_model, str( int (random.random() * 1000)) + os.path.basename(imgUrl)) .replace("\\", "/").replace("?", "")
             
             if ".png" not in path or ".jpg" not in path:
                 path = path + ".png"
@@ -78,12 +84,21 @@ if __name__ == '__main__':
         url = input()
         if(url == "q"):
             break
+        
+        print("Train or Test: ")
+        train_string = input()
+        train = True
+        if (train_string.upper() != "TRAIN"):
+            train = False
+        elif (train_string == "q"):
+            break
+
         print("Shoe model / Folder name: " )
         folder = input()
         if(folder == "q"):
             break
         try:
-            scrape(url, folder.upper())
+            scrape(url, train, folder.upper())
         except Exception as e:
             print(str(e))
             traceback.print_exc()
