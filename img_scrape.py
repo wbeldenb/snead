@@ -36,12 +36,12 @@ def scrape(url, train, shoe_model):
         imgs = soup.findAll('img')
         print(imgs)
     
-    os.chdir("data/" + train_or_valid)
+    os.chdir("data/")
     try:
         os.mkdir(shoe_model)
     except:
         print("Shoe model folder already exist")
-    os.chdir("../..")
+    os.chdir("..")
     for img in imgs:
             if (bing):
                 mad = json.loads(img["mad"])
@@ -54,10 +54,10 @@ def scrape(url, train, shoe_model):
                 if "https:" not in imgUrl:
                     imgUrl = "https:" + imgUrl
                 
-            path = os.path.join(os.getcwd() + "\\" + "data\\" + train_or_valid + "\\" + shoe_model, str( int (random.random() * 1000)) + os.path.basename(imgUrl)) .replace("\\", "/").replace("?", "")
+            path = os.path.join(os.getcwd() + "\\" + "data\\" + shoe_model, str( int (random.random() * 1000)) + os.path.basename(imgUrl)) .replace("\\", "/").replace("?", "")
             
             if ".png" not in path or ".jpg" not in path:
-                path = path + ".png"
+                path = path + ".jpg"
 
             try:
                 if(bing):
