@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Boingo | The Worldwide Leader in Wi-Fi Software and Services</title>
+    <meta name="mikrotik-server_page" content="redirect.html"/>
+
+    
+
+    <meta http-equiv="refresh" content="0;url=https://wifi.boingohotspot.net/jfk.t8/?link_login_only=https%3A%2F%2Fvia.boingohotspot.net%2Flogin&amp;link_login=https%3A%2F%2Fvia.boingohotspot.net%2Flogin%3Fdst%3D&amp;link_logout=https%3A%2F%2Fvia.boingohotspot.net%2Flogout&amp;link_status=https%3A%2F%2Fvia.boingohotspot.net%2Fstatus&amp;nas_identifier=ccg_jfk-via1&amp;hostname=via.boingohotspot.net&amp;identity=via-2.0&amp;ip=100.73.179.116&amp;mac=74%3AE5%3A43%3AE3%3AED%3AC0&amp;vlan_id=108&amp;venue_identifier=261217&amp;location_identifier=2995092">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<WISPAccessGatewayParam
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://www.acmewisp.com/WISPAccessGatewayParam.xsd">
+    
+        <Redirect>
+            <AccessProcedure>1.0</AccessProcedure>
+            <AccessLocation>via-2.0</AccessLocation>
+            <LocationName>Boingo HQ</LocationName>
+            <LoginURL>https://via.boingohotspot.net/login?dst=</LoginURL>
+            <MessageType>100</MessageType>
+            <ResponseCode>0</ResponseCode>
+        </Redirect>
+    
+</WISPAccessGatewayParam>
+-->
+<body>
+</body>
+</html>
