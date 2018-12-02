@@ -1,0 +1,778 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<script data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.evt={};__ez.ck={};__ez.dot={};__ez.template={};__ez.template.isOrig=false;__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.ck.get=function(e,n){null!==n&&(e=e+"_"+n);for(var o=e+"=",t=decodeURIComponent(document.cookie).split(";"),i=0;i<t.length;i++){for(var c=t[i];" "===c.charAt(0);)c=c.substring(1);if(0===c.indexOf(o))return c.substring(o.length,c.length)}return""},__ez.ck.setByCat=function(e,n){if("undefined"!=typeof cmpIsOn){if(null!=n){var o=__ez.ck.get("ezCMPCookieConsent",null);-1!==(o=o.substring(1,o.length)).indexOf(n+"=1")?document.cookie=e:""===o&&"undefined"!=typeof cmpCookies&&(void 0===cmpCookies[n]&&(cmpCookies[n]=[]),cmpCookies[n].push(e))}}else document.cookie=e};__ez.queue=function(){var e=0,i=0,t=[],n=[],r=[],o=!0,s={func:function(e,i,n,r,o,s,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===n?null:n instanceof Array?n:[n],this.isBlock=r,this.blockedBy=o,this.deleteWhenComplete=s,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.process=function(){c("... func = "+e),l.isInitialized=!0,l.isComplete=!0;var i=l.funcName.split(".");i.length>3||(3===i.length?window[i[0]][i[1]][i[2]].apply(null,this.parameters):2===i.length?window[i[0]][i[1]].apply(null,this.parameters):window[l.funcName].apply(null,this.parameters)),!0===l.deleteWhenComplete&&delete t[e],!0===l.isBlock&&(c("----- F'D: "+l.name),d())}},file:function(e,i,t,n,r,o,s){var a=this;this.name=e,this.path=i,this.async=r,this.defer=o,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=s,this.process=function(){a.isInitialized=!0,c("... file = "+e);var t=document.createElement("script");t.src=i,!0===r?t.async=!0:!0===o&&(t.defer=!0),t.onerror=function(){c("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&d()},t.onreadystatechange=t.onload=function(){var e=t.readyState;c("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&d())},document.getElementsByTagName("head")[0].appendChild(t)}}};function a(e){!0!==l(e)&&0!=o&&e.process()}function l(e){if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var n=e.blockedBy[i];if(!1===t.hasOwnProperty(n))return c(e.name+" blocked = "+n),!0;if(!0===e.proceedIfError&&!0===t[n].isError)return!1;if(!1===t[n].isComplete)return c(e.name+" blocked = "+n),!0}return!1}function c(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function d(){++e>200||(c("let's go"),h(n),h(r))}function h(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||l(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?c(t.name+": error"):!0===t.isComplete?c(t.name+": complete already"):!0===t.isInitialized&&c(t.name+": initialized already"):t.process()}}return{addFile:function(e,i,o,l,c,d,h,f){var u=new s.file(e,i,o,l,c,d,h);!0===f?n[e]=u:r[e]=u,t[e]=u,a(u)},addFunc:function(e,o,l,c,d,h,f,u,p){!0===h&&(e=e+"_"+i++);var m=new s.func(e,o,l,c,d,f,u);!0===p?n[e]=m:r[e]=m,t[e]=m,a(m)},items:t,processAll:d,setallowLoad:function(e){o=e}}}();var __ezDotData=function(e,r){this.name=e,this.val=r};__ez.dot.b64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",encode:function(e){var r,t,n,o,a,i,d,_="",f=0;for(e=Base64._utf8_encode(e);f<e.length;)o=(r=e.charCodeAt(f++))>>2,a=(3&r)<<4|(t=e.charCodeAt(f++))>>4,i=(15&t)<<2|(n=e.charCodeAt(f++))>>6,d=63&n,isNaN(t)?i=d=64:isNaN(n)&&(d=64),_=_+this._keyStr.charAt(o)+this._keyStr.charAt(a)+this._keyStr.charAt(i)+this._keyStr.charAt(d);return _},decode:function(e){var r,t,n,o,a,i,d="",_=0;for(e=e.replace(/[^A-Za-z0-9+/=]/g,"");_<e.length;)r=this._keyStr.indexOf(e.charAt(_++))<<2|(o=this._keyStr.indexOf(e.charAt(_++)))>>4,t=(15&o)<<4|(a=this._keyStr.indexOf(e.charAt(_++)))>>2,n=(3&a)<<6|(i=this._keyStr.indexOf(e.charAt(_++))),d+=String.fromCharCode(r),64!=a&&(d+=String.fromCharCode(t)),64!=i&&(d+=String.fromCharCode(n));return d=Base64._utf8_decode(d)},_utf8_encode:function(e){e=e.replace(/rn/g,"n");for(var r="",t=0;t<e.length;t++){var n=e.charCodeAt(t);n<128?r+=String.fromCharCode(n):(127<n&&n<2048?r+=String.fromCharCode(n>>6|192):(r+=String.fromCharCode(n>>12|224),r+=String.fromCharCode(n>>6&63|128)),r+=String.fromCharCode(63&n|128))}return r},_utf8_decode:function(e){for(var r="",t=0,n=c1=c2=0;t<e.length;)(n=e.charCodeAt(t))<128?(r+=String.fromCharCode(n),t++):191<n&&n<224?(c2=e.charCodeAt(t+1),r+=String.fromCharCode((31&n)<<6|63&c2),t+=2):(c2=e.charCodeAt(t+1),c3=e.charCodeAt(t+2),r+=String.fromCharCode((15&n)<<12|(63&c2)<<6|63&c3),t+=3);return r}},__ez.dot.dataToStr=function(e){if(void 0===e)return[];try{for(var r in e)e[r].val=e[r].val+""}catch(e){}return e},__ez.dot.getCC=function(){var e="XX";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(e=_ezaq.country),e},__ez.dot.getDID=function(){var e="0";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(e=_ezaq.domain_id.toString()),e},__ez.dot.getEpoch=function(e){return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(e=_ezaq.t_epoch),e},__ez.dot.getPageviewId=function(){var e="";return"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("page_view_id")&&(e=_ezaq.page_view_id),e},__ez.dot.getURL=function(e){return("undefined"!=typeof ezJsu&&1==ezJsu||"undefined"!=typeof _ez_sa&&1==_ez_sa||"undefined"!=typeof isAmp&&!0===isAmp||"undefined"!=typeof ezWp&&!0===ezWp)&&(e="//g.ezoic.net"+e),e},__ez.dot.isValid=function(e){for(var r=0;r<e.length;r++)if(e[r]instanceof __ezDotData==!1)return console.error("Invalid data. ",e[r]),!1;return!0},__ez.dot.isDefined=function(){for(var e=0;e<arguments.length;e++)if(void 0===arguments[e]||null===arguments[e])return console.error("Argument not defined. ",arguments),!1;return!0};__ez.bit=function(){function c(a,b){d(a,b),e()}function d(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:"pageview",pageview_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function e(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(__ez.dot.isDefined(a)&&a.length>0&&((new Image).src=__ez.dot.getURL(b)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&ds="+btoa(JSON.stringify(a))),a=[])}var a=[],b="/detroitchicago/greenoaks.gif";return{Add:d,AddAndFire:c,Fire:e}}();</script><script data-cfasync='false' data-pagespeed-no-defer>__ez.pel=function(){var z=[],i="/porpoiseant/army.gif";function t(e,i,t,d,_,o,n){if(__ez.dot.isDefined(e,e.getSlotElementId)){var a=parseInt(e.getTargeting("ap")[0]),r=function(e){var i=0;try{var t=e.getTargetingMap(),d=e.getSlotElementId();if(-1===d.indexOf("div-gpt-ad"))return i;if(void 0!==t)for(var _ in t)if(-1!==_.indexOf("iid")&&void 0!==t[_][0]){i=t[_][0];break}}catch(e){}return i}(e),s=e.getSlotElementId(),p=parseInt(e.getTargeting("compid")[0]),g=0,v=0;if("object"==typeof _ezim_d){var m=e.getAdUnitPath().split("/").pop();void 0!==_ezim_d[m]&&(void 0!==_ezim_d[m].creative_id&&(v=_ezim_d[m].creative_id),void 0!==_ezim_d[m].line_item_id&&(g=_ezim_d[m].line_item_id))}__ez.dot.isDefined(r,s)&&__ez.dot.isValid(i)&&z.push({type:"impression",impression_id:r,domain_id:__ez.dot.getDID(),unit:s,t_epoch:__ez.dot.getEpoch(0),revenue:t,est_revenue:d,ad_position:a,ad_size:"",bid_floor_filled:_,bid_floor_prev:o,stat_source_id:n,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:p,line_item_id:g,creative_id:v,data:__ez.dot.dataToStr(i)})}}function d(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(z)&&0<z.length){var e=__ez.dot.getURL(i)+"?orig="+(!0===__ez.template.isOrig?1:0)+"&sts="+btoa(JSON.stringify(z));void 0!==window.isAmp&&isAmp&&void 0!==window._ezaq&&_ezaq.hasOwnProperty("domain_id")&&(e+="&visit_uuid="+_ezaq.visit_uuid),(new Image).src=e}z=[]}}return{Add:t,AddAndFire:function(e,i){t(e,i,0,0,0,0,0),d()},AddById:function(e,i){var t=e.split("/");if(__ez.dot.isDefined(e)&&3===t.length&&__ez.dot.isValid(i)){var d=t[0],_=t[2];z.push({type:"impression",impression_id:_,domain_id:__ez.dot.getDID(),unit:d,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(i)})}},Fire:d}}();var EzoicPixel=function(){this.pixels=[],this.pixelUrl="/ezoic/e.gif",("undefined"!=typeof ezJsu&&!0===ezJsu||"undefined"!=typeof _ez_sa&&!0===_ez_sa||void 0!==window.isAmp&&!0===isAmp||"undefined"!=typeof ezWp&&!0===ezWp)&&(this.pixelUrl="//g.ezoic.net"+this.pixelUrl),this.tEpoch=0,"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("t_epoch")&&(this.tEpoch=_ezaq.t_epoch)},EzoicPixelData=function(i,e){this.name=i,this.val=e};EzoicPixel.prototype={constructor:EzoicPixel,AddAndFireImpPixel:function(i,e){this.AddImpPixel(i,e,0,0,0,0,0),this.FirePixels()},AddAndFirePVPixel:function(i,e){this.AddPVPixel(i,e),this.FirePixels()},AddImpPixel:function(i,e,t,n,o,a,r){if(this.isDefined(i,i.getSlotElementId)){var d=parseInt(i.getTargeting("ap")[0]),s=i.getSizes()[0],p=s.l.toString()+"x"+s.j.toString(),l="0",h="XX";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(l=_ezaq.domain_id.toString()),"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("country")&&(h=_ezaq.country);var f=this.getSlotIID(i),c=i.getSlotElementId();this.isDefined(f,c)&&this.validateData(e)&&(e=this.convertDataToStr(e),this.pixels.push({type:"impression",impression_id:f,domain_id:l,unit:c,t_epoch:this.tEpoch,revenue:t,est_revenue:n,ad_position:d,ad_size:p,bid_floor_filled:o,bid_floor_prev:a,stat_source_id:r,country_code:h,data:e}))}},AddImpPixelById:function(i,e){var t="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(t=_ezaq.domain_id.toString());var n=i.split("/");if(this.isDefined(i)&&3===n.length&&this.validateData(e)){var o=n[0],a=n[2];e=this.convertDataToStr(e),this.pixels.push({type:"impression",impression_id:a,domain_id:t,unit:o,t_epoch:this.tEpoch,data:e})}},AddPVPixel:function(i,e){var t="0";"undefined"!=typeof _ezaq&&_ezaq.hasOwnProperty("domain_id")&&(t=_ezaq.domain_id.toString()),this.isDefined(i)&&this.validateData(e)&&(e=this.convertDataToStr(e),this.pixels.push({type:"pageview",pageview_id:i,domain_id:t,t_epoch:this.tEpoch,data:e}))},FirePixels:function(){void 0!==document.visibilityState&&"prerender"===document.visibilityState||(this.isDefined(this.pixels)&&this.pixels.length>0&&((new Image).src=this.pixelUrl+"?orig="+(!0===__ez.template.isOrig?1:0)+"&pixels="+encodeURIComponent(JSON.stringify(this.pixels))),this.pixels=[])},NewData:function(i,e){return new EzoicPixelData(i,e)},convertDataToStr:function(i){if(void 0===i)return[];try{for(var e in i)i[e].val=i[e].val+""}catch(i){}return i},getSlotIID:function(i){var e=0;try{var t=i.getTargetingMap();if(-1===i.getSlotElementId().indexOf("div-gpt-ad"))return e;if(void 0!==t)for(var n in t)if(-1!==n.indexOf("iid")&&void 0!==t[n][0]){e=t[n][0];break}}catch(i){}return e},isDefined:function(){for(var i=0;i<arguments.length;i++)if(void 0===arguments[i]||null===arguments[i])return console.error("Argument not defined. ",arguments),!1;return!0},validateData:function(i){for(var e=0;e<i.length;e++)if(i[e]instanceof EzoicPixelData==!1)return console.error("Invalid pixelData. ",i[e]),!1;return!0}};</script>
+<script type="text/javascript">
+	var __banger_pmp_deals=[{"SlotName":"/1254144/housakicks_com-box-1","Deals":[{"DealId":17,"Floor":160},{"DealId":18,"Floor":25},{"DealId":19,"Floor":100},{"DealId":20,"Floor":300},{"DealId":21,"Floor":2000},{"DealId":22,"Floor":2500},{"DealId":23,"Floor":3000},{"DealId":24,"Floor":4000},{"DealId":25,"Floor":5000},{"DealId":26,"Floor":6500},{"DealId":7,"Floor":150},{"DealId":8,"Floor":200},{"DealId":9,"Floor":300},{"DealId":10,"Floor":400},{"DealId":11,"Floor":500},{"DealId":12,"Floor":600},{"DealId":13,"Floor":700},{"DealId":14,"Floor":800},{"DealId":15,"Floor":1000},{"DealId":16,"Floor":1500}]},{"SlotName":"/1254144/housakicks_com-box-2","Deals":[{"DealId":17,"Floor":160},{"DealId":18,"Floor":25},{"DealId":19,"Floor":100},{"DealId":20,"Floor":300},{"DealId":21,"Floor":2000},{"DealId":22,"Floor":2500},{"DealId":23,"Floor":3000},{"DealId":24,"Floor":4000},{"DealId":25,"Floor":5000},{"DealId":26,"Floor":6500},{"DealId":7,"Floor":150},{"DealId":8,"Floor":200},{"DealId":9,"Floor":300},{"DealId":10,"Floor":400},{"DealId":11,"Floor":500},{"DealId":12,"Floor":600},{"DealId":13,"Floor":700},{"DealId":14,"Floor":800},{"DealId":15,"Floor":1000},{"DealId":16,"Floor":1500}]},{"SlotName":"/1254144/housakicks_com-large-leaderboard-1","Deals":[{"DealId":17,"Floor":160},{"DealId":18,"Floor":25},{"DealId":19,"Floor":100},{"DealId":20,"Floor":300},{"DealId":21,"Floor":2000},{"DealId":22,"Floor":2500},{"DealId":23,"Floor":3000},{"DealId":24,"Floor":4000},{"DealId":25,"Floor":5000},{"DealId":26,"Floor":6500},{"DealId":7,"Floor":150},{"DealId":8,"Floor":200},{"DealId":9,"Floor":300},{"DealId":10,"Floor":400},{"DealId":11,"Floor":500},{"DealId":12,"Floor":600},{"DealId":13,"Floor":700},{"DealId":14,"Floor":800},{"DealId":15,"Floor":1000},{"DealId":16,"Floor":1500}]},{"SlotName":"/1254144/housakicks_com-box-3","Deals":[{"DealId":17,"Floor":160},{"DealId":18,"Floor":25},{"DealId":19,"Floor":100},{"DealId":20,"Floor":300},{"DealId":21,"Floor":2000},{"DealId":22,"Floor":2500},{"DealId":23,"Floor":3000},{"DealId":24,"Floor":4000},{"DealId":25,"Floor":5000},{"DealId":26,"Floor":6500},{"DealId":7,"Floor":150},{"DealId":8,"Floor":200},{"DealId":9,"Floor":300},{"DealId":10,"Floor":400},{"DealId":11,"Floor":500},{"DealId":12,"Floor":600},{"DealId":13,"Floor":700},{"DealId":14,"Floor":800},{"DealId":15,"Floor":1000},{"DealId":16,"Floor":1500}]},{"SlotName":"/1254144/housakicks_com-medrectangle-2","Deals":[{"DealId":17,"Floor":160},{"DealId":18,"Floor":25},{"DealId":19,"Floor":100},{"DealId":20,"Floor":300},{"DealId":21,"Floor":2000},{"DealId":22,"Floor":2500},{"DealId":23,"Floor":3000},{"DealId":24,"Floor":4000},{"DealId":25,"Floor":5000},{"DealId":26,"Floor":6500},{"DealId":7,"Floor":150},{"DealId":8,"Floor":200},{"DealId":9,"Floor":300},{"DealId":10,"Floor":400},{"DealId":11,"Floor":500},{"DealId":12,"Floor":600},{"DealId":13,"Floor":700},{"DealId":14,"Floor":800},{"DealId":15,"Floor":1000},{"DealId":16,"Floor":1500}]}];
+</script>
+<script type='text/javascript'>_ebcids=[138231308856,138231308940,138231308949,138231387842,138231421744,138231421759,138231421774,138231421783,138231421789,138231421792,138242067587,138242067590,138242067602,138242067605,138242067608,138242067614,138242229406,138242229415,138242229421,138242229430];</script>
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+function ez_isclean( data ) {
+    if (typeof data === 'undefined') { data = document.URL; }
+    var re = /(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/;
+    var isClean = !re.test(data);
+    return isClean;
+}
+
+var ez_queue = new Array();
+function sort_queue(a, b)
+{
+  if( a.priority < b.priority ) return -1;
+  else if( a.priority == b.priority ) return 0;
+  else return 1;
+}
+function execute_ez_queue()
+{
+  ez_queue.sort( sort_queue );
+
+  for( var i in ez_queue )
+  {
+        if(typeof ez_queue[i].method != "undefined")
+        {
+            try{
+                ez_queue[i].method.call( null );
+            }
+            catch (err) {
+
+            }
+        }
+  }
+}
+
+window.ez_ad_units = new Array();
+window.ezslots = new Array();
+function ez_write_tag(d) {
+    if(ez_isclean() && d instanceof Array) {
+
+		ez_ad_units[ez_ad_units.length] = d;
+        var ezcmd = "googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+d[1]+"-0';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+d[2]+".getTargeting('ga')[0] == '0'){to = 500;console.log('"+d[2]+" - no google');}if(window.ezDisableInitialLoad==true){setTimeout(function(){googletag.pubads().refresh(["+d[2]+"])},to);}});";
+		return ezcmd;
+    }
+    else {
+        return "1+1";
+    }
+}
+function in_array(needle, haystack) {
+    var length = haystack.length;
+    for(var i = 0; i < length; i++) {
+        if(haystack[i] == needle) return true;
+    }
+    return false;
+}
+</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>var ezrpos = new Array();var ez_current_interval;var ez_current_load = 0;</script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer src="//go.ezoic.net/porpoiseant/dall4.js" async></script>
+<script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer>
+
+function epbjsRefreshSlot(e){epbjs.que.push(function(){epbjs.requestBids({adUnitCodes:[e.getSlotElementId()],bidsBackHandler:function(){epbjs.setTargetingForGPTAsync([e.getSlotElementId()])}})})}var epbjs=epbjs||{};epbjs.bidderTimeout=2000,epbjs.useAdj=true,epbjs.que=epbjs.que||[],epbjs.ezdss=epbjs.ezdss||[],epbjs.ezas=epbjs.ezas||[],epbjs.ezobid=epbjs.ezobid||[],epbjs.que.push(function(){var e=[{code: 'div-gpt-ad-housakicks_com-box-1-0', sizes: [[300,600],[300,1050]], mediaType: 'banner', bids: [{bidder: 'oftmedia', params:{ placementId: '11660722' }},{bidder: 'sonobi', params: { placement_id: 'f9acba78ee868f5dcb34' }},{bidder: 'criteo', params: { zoneId: '1250267' }}] },{code: 'div-gpt-ad-housakicks_com-box-2-0', sizes: [[970,90],[728,90]], mediaType: 'banner', bids: [{bidder: 'oftmedia', params:{ placementId: '11660801' }},{bidder: 'sonobi', params: { placement_id: 'a85962a003f80c6a8f7c' }},{bidder: 'criteo', params: { zoneId: '1248508' }}] },{code: 'div-gpt-ad-housakicks_com-large-leaderboard-1-0', sizes: [[250,250]], mediaType: 'banner', bids: [{bidder: 'sonobi', params: { placement_id: '8d1ee9954821e4fde05f' }}] },{code: 'div-gpt-ad-housakicks_com-box-3-0', sizes: [[580,400],[336,280],[300,250]], mediaType: 'banner', bids: [{bidder: 'oftmedia', params:{ placementId: '11660707' }},{bidder: 'sonobi', params: { placement_id: 'f076e2952ed4c5afeb4b' }},{bidder: 'criteo', params: { zoneId: '1263523' }}] },{code: 'div-gpt-ad-housakicks_com-medrectangle-2-0', sizes: [[970,90],[728,90]], mediaType: 'banner', bids: [{bidder: 'oftmedia', params:{ placementId: '11660801' }},{bidder: 'sonobi', params: { placement_id: '95860e6d35b936bd529d' }},{bidder: 'criteo', params: { zoneId: '1248508' }}] }];var priceBuckets={"buckets":[{"precision":2,"min":0,"max":5,"increment":0.01},{"precision":2,"min":5,"max":50,"increment":0.10},{"precision":2,"min":50,"max":120,"increment":5.00}]};epbjs.setConfig({priceGranularity:priceBuckets});epbjs.addAdUnits(e);epbjs.aliasBidder('appnexus', 'oftmedia');epbjs.SS={"criteo":10050,"oftmedia":10081,"sonobi":10048},epbjs.bidderSettings={oftmedia: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.900000; var adj2 = adj1 * 1.300000; return adj2; }},sonobi: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.700000; var adj2 = adj1 * 1.300000; return adj2; }},criteo: { bidCpmAdjustment: function(bidCpm) { var adj1 = bidCpm * 0.720000; var adj2 = adj1 * 1.300000; return adj2; }},standard:{adserverTargeting:[{key:"hb_bidder",val:function(e){return e.bidderCode}},{key:"hb_adid",val:function(e){return e.adId}},{key:"hb_pb",val:function(e){return e.pbCg;}},{key:"hb_format",val:function(e){return e.mediaType;}},{key:"hb_ssid",val:function(e){return"ehb"==e.bidder?0:"undefined"!=typeof epbjs.SS[e.bidder.toLowerCase()]?epbjs.SS[e.bidder.toLowerCase()]:(console.error("epbjs: NO MATCH"),0)}}]}},epbjs.onEvent("bidWon",function(e){epbjs.ezas[e.adUnitCode]=e.size,"ehb"==e.bidder?epbjs.ezdss[e.adUnitCode]=e.ss:"undefined"!=typeof epbjs.SS[e.bidder.toLowerCase()]?(epbjs.ezdss[e.adUnitCode]=epbjs.SS[e.bidder.toLowerCase()],1==epbjs.useAdj&&["sovrn","openx","pulsepoint","defymedia","aol","conversant","districtm","admedia","brealtime","sonobi","criteo","ix","cox","audienceNetwork","pubmatic","rubicon","gumgum","oftmedia","lockerdome"].indexOf(e.bidder)>-1&&(epbjs.ezobid[e.adUnitCode]=e.cpm/1.300000)):console.error("epbjs: NO MATCH")}),epbjs.requestBids({bidsBackHandler:function(e){epbjs.fastLoadAuctionEnd = true; epbjs.setTargetingForGPTAsync()}})});
+</script><script type='text/javascript'>var ezorbf = []; </script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.isEZABL=false;window.ezmadspc=300;window.ezoViewCheck = false;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>window.ezDisableInitialLoad=false;</script><script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+window.googletag = window.googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+
+
+
+</script>
+<script data-cfasync="false" data-pagespeed-no-defer type='text/javascript'>
+googletag.cmd.push(function() {googletag.destroySlots();if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslot_0 = googletag.defineSlot('/1254144/housakicks_com-box-1',[300,1050],'div-gpt-ad-housakicks_com-box-1-0').addService(googletag.pubads()).setTargeting('iid14','1337531').setTargeting('t','134').setTargeting('d','84945').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1103').setTargeting('sap','1103').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','0').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','1').setTargeting('al','1000').setTargeting('compid','0').setTargeting('tap','housakicks_com-box-1-1337531').setTargeting('eb_br','c50a963ecc62061b386b119512894997').setTargeting('eba','1').setTargeting('bv','15').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','29000').setTargeting('br2','15000').setTargeting('ezoic','1').setTargeting('deal1',[27,28,29,30]);ezslot_0.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4564893445').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[0]="0";ezslot_1 = googletag.defineSlot('/1254144/housakicks_com-box-2',[970,90],'div-gpt-ad-housakicks_com-box-2-0').addService(googletag.pubads()).setTargeting('iid15','1411181').setTargeting('t','134').setTargeting('d','84945').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1102').setTargeting('sap','1102').setTargeting('a','|6|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','1').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','7').setTargeting('al','1001').setTargeting('compid','0').setTargeting('tap','housakicks_com-box-2-1411181').setTargeting('eb_br','bdc0577cc25fcd86ffc2dedc35a93ae4').setTargeting('eba','1').setTargeting('bv','18').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','30000').setTargeting('br2','18000').setTargeting('ezoic','1').setTargeting('deal1',[27,28,29,30]);ezslot_1.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4564893445').set('adsense_link_color','858585').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[1]="1";ezslot_2 = googletag.defineSlot('/1254144/housakicks_com-large-leaderboard-1',[250,250],'div-gpt-ad-housakicks_com-large-leaderboard-1-0').addService(googletag.pubads()).setTargeting('iid14','1386580').setTargeting('t','134').setTargeting('d','84945').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1107').setTargeting('sap','1107').setTargeting('a','|253|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','2').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','0').setTargeting('al','1035').setTargeting('compid','0').setTargeting('tap','housakicks_com-large-leaderboard-1-1386580').setTargeting('eb_br','bdc0577cc25fcd86ffc2dedc35a93ae4').setTargeting('eba','1').setTargeting('bv','14').setCollapseEmptyDiv(false).setTargeting('br1','30000').setTargeting('br2','18000').setTargeting('ezoic','1').setTargeting('stl','27').setTargeting('deal1',[27,28,29,30]);ezslot_2.set('adsense_background_color','EEFF00').set('adsense_border_color','EEFF00').set('adsense_channel_ids','4564893445').set('adsense_link_color','000000').set('adsense_text_color','000000').set('adsense_url_color','000000');ezrpos[2]="2";ezslot_3 = googletag.defineSlot('/1254144/housakicks_com-box-3',[580,400],'div-gpt-ad-housakicks_com-box-3-0').addService(googletag.pubads()).setTargeting('iid15','1411181').setTargeting('t','134').setTargeting('d','84945').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1108').setTargeting('sap','1108').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','3').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','2').setTargeting('al','1002').setTargeting('compid','0').setTargeting('tap','housakicks_com-box-3-1411181').setTargeting('eb_br','bdc0577cc25fcd86ffc2dedc35a93ae4').setTargeting('eba','1').setTargeting('bv','17').setCollapseEmptyDiv(false).setTargeting('br1','30000').setTargeting('br2','30000').setTargeting('ezoic','1').setTargeting('deal1',[27,28,29,30]);ezslot_3.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4564893445').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[3]="3";ezslot_4 = googletag.defineSlot('/1254144/housakicks_com-medrectangle-2',[970,90],'div-gpt-ad-housakicks_com-medrectangle-2-0').addService(googletag.pubads()).setTargeting('iid15','1411480').setTargeting('t','134').setTargeting('d','84945').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1100').setTargeting('sap','1100').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','4').setTargeting('reft','tf').setTargeting('refs','30').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','3').setTargeting('al','1005').setTargeting('compid','0').setTargeting('tap','housakicks_com-medrectangle-2-1411480').setTargeting('eb_br','bdc0577cc25fcd86ffc2dedc35a93ae4').setTargeting('eba','1').setTargeting('bv','17').setCollapseEmptyDiv(false).setTargeting('br1','30000').setTargeting('br2','16000').setTargeting('ezoic','1').setTargeting('deal1',[27,28,29,30]);ezslot_4.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4564893445').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[4]="4";}else{window.ezHideLocations=[];ezslot_0 = googletag.defineSlot('/1254144/housakicks_com-box-1',[300,1050],'div-gpt-ad-housakicks_com-box-1-0').addService(googletag.pubads()).setTargeting('iid14','1337531').setTargeting('t','134').setTargeting('d','84945').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1103').setTargeting('sap','1103').setTargeting('a','|3|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','0').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','1').setTargeting('al','1000').setTargeting('compid','0').setTargeting('tap','housakicks_com-box-1-1337531').setTargeting('eb_br','c50a963ecc62061b386b119512894997').setTargeting('eba','1').setTargeting('bv','15').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','29000').setTargeting('br2','15000').setTargeting('ezoic','1').setTargeting('deal1',[27,28,29,30]);ezslot_0.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4564893445').set('adsense_link_color','0000FF').set('adsense_text_color','000000').set('adsense_url_color','828282');ezrpos[0]="0";ezslot_1 = googletag.defineSlot('/1254144/housakicks_com-box-2',[970,90],'div-gpt-ad-housakicks_com-box-2-0').addService(googletag.pubads()).setTargeting('iid15','1411181').setTargeting('t','134').setTargeting('d','84945').setTargeting('t1','134').setTargeting('pvc','0').setTargeting('ap','1102').setTargeting('sap','1102').setTargeting('a','|6|').setTargeting('as','revenue').setTargeting('plat','1').setTargeting('bra','mod2').setTargeting('ic','1').setTargeting('at','mbf').setTargeting('adr','399').setTargeting('ezosn','1').setTargeting('reft','tf').setTargeting('refs','120').setTargeting('ga','2497208').setTargeting('gala','').setTargeting('rid','99998').setTargeting('pt','7').setTargeting('al','1001').setTargeting('compid','0').setTargeting('tap','housakicks_com-box-2-1411181').setTargeting('eb_br','bdc0577cc25fcd86ffc2dedc35a93ae4').setTargeting('eba','1').setTargeting('bv','18').setTargeting('acptad','1').setCollapseEmptyDiv(false).setTargeting('br1','30000').setTargeting('br2','18000').setTargeting('ezoic','1').setTargeting('deal1',[27,28,29,30]);ezslot_1.set('adsense_background_color','FFFFFF').set('adsense_border_color','FFFFFF').set('adsense_channel_ids','4564893445').set('adsense_link_color','858585').set('adsense_text_color','000000').set('adsense_url_color','F0F0F0');ezrpos[1]="1";window.ezHideLocations.push('div-gpt-ad-housakicks_com-large-leaderboard-1-0');window.ezHideLocations.push('div-gpt-ad-housakicks_com-box-3-0');window.ezHideLocations.push('div-gpt-ad-housakicks_com-medrectangle-2-0');}googletag.pubads().addEventListener('slotRenderEnded', function(event) { __ez.queue.addFunc("ezbanger", "ezbanger", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('impressionViewable', function(event) { __ez.queue.addFunc("ezvb", "ezvb", event, false, ['banger.js'], true, true, false, true); });googletag.pubads().addEventListener('slotVisibilityChanged', function(event) { __ez.queue.addFunc("ezvbc", "ezvbc", event, false, ['banger.js'], true, true, false, true); });googletag.enableServices();});if(typeof window.isEZABL == 'undefined' || window.isEZABL != true) {ezslots.push("ezslot_0");ezslots.push("ezslot_1");ezslots.push("ezslot_2");ezslots.push("ezslot_3");ezslots.push("ezslot_4");}else{ezslots.push("ezslot_0");ezslots.push("ezslot_1");}</script>
+<script>(function(){function a(g,h,i){var j=new Date;j.setTime(j.getTime()+1e3*(60*(60*(24*i))));var k="expires="+j.toUTCString(),l=g+"="+h+";"+k+";path=/;";"undefined"!=typeof ezdomain&&(l+="domain="+ezdomain),document.cookie=l}var b=window.addEventListener?"addEventListener":"attachEvent",c=window[b],f="attachEvent"==b?"onmessage":"message";c(f,function(g){"undefined"!=typeof g.data.ezstatus&&(__ez.bit.AddAndFire(_ezaq.page_view_id,[new __ezDotData("dg",g.data.ezstatus)]),a("ezdg",g.data.ezstatus,730))})})();</script>
+<script type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":1,"ad_location_ids":"0,1,35,2,5","ad_transform_level":0,"adx_ad_count":5,"bidder_version":3,"city":"Arroyo Grande","country":"US","days_since_last_visit":-1,"display_ad_count":4,"domain_id":84945,"ds_adsize_opt_id":-1,"engaged_time_visit":0,"ezcache_level":1,"forensiq_score":-1,"form_factor_id":1,"framework_id":1,"has_bad_image":0,"has_bad_words":0,"iab_category":"","is_from_recommended_pages":false,"is_return_visitor":false,"last_page_load":"","last_pageview_id":"","lt_cache_level":0,"max_ads":4,"metro_code":855,"page_ad_positions":"1100,1102,1103,1107,1108","page_view_count":0,"page_view_id":"26b61cf0-718b-45d8-7f87-f43ce85c689e","position_selection_id":16,"postal_code":"93420","pv_event_count":0,"response_time_orig":831,"serverid":"18.144.26.233:5239","state":"CA","sub_page_ad_positions":"1100,1102,1103,1107,1108","t_epoch":1543790886,"template_id":134,"time_on_site_visit":0,"url":"https://housakicks.com/?s=shadow","user_id":0,"word_count":2186,"worst_bad_word_level":0};var _ezim_d = {"housakicks_com-box-1":{"adsense_stat_source_id":5,"adx_ad_count":5,"adx_stat_source_id":35,"full_id":"housakicks_com-box-1/2018-12-02/1337531","height":"1050","position_id":1103,"sub_position_id":1103,"width":"300"},"housakicks_com-box-2":{"adsense_stat_source_id":5,"adx_ad_count":5,"adx_stat_source_id":35,"full_id":"housakicks_com-box-2/2018-12-02/1411181","height":"90","position_id":1102,"sub_position_id":1102,"width":"970"},"housakicks_com-box-3":{"adsense_stat_source_id":5,"adx_ad_count":5,"adx_stat_source_id":35,"full_id":"housakicks_com-box-3/2018-12-02/1411181","height":"400","position_id":1108,"sub_position_id":1108,"width":"580"},"housakicks_com-large-leaderboard-1":{"adsense_stat_source_id":5,"adx_ad_count":5,"adx_stat_source_id":35,"full_id":"housakicks_com-large-leaderboard-1/2018-12-02/1386580","height":"250","position_id":1107,"sub_position_id":1107,"width":"250"},"housakicks_com-medrectangle-2":{"adsense_stat_source_id":5,"adx_ad_count":5,"adx_stat_source_id":35,"full_id":"housakicks_com-medrectangle-2/2018-12-02/1411480","height":"90","position_id":1100,"sub_position_id":1100,"width":"970"}};var _ezat = {"domain_id":84945,"form_factor_id":1,"framework_id":1,"pageview_date":"2018-12-02","pageview_id":"26b61cf0-718b-45d8-7f87-f43ce85c689e","template_id":134,"url":"https://housakicks.com/?s=shadow","visit_uuid":"c95ca092-4f3f-4b13-4da9-9a7fa7074764"};</script><script data-pagespeed-no-defer data-cfasync='false' type="text/javascript">__ez.queue.addFile('rochester.js', '/detroitchicago/rochester.js?cb=182-0&v=8', false, [], true, false, true, true);</script><script data-pagespeed-no-defer data-cfasync='false' type="text/javascript">__ez.queue.addFile('banger.js', '/porpoiseant/banger.js?cb=182-0&bv=2&v=11&PageSpeed=off', true, [], true, false, false, true);</script><script data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl() {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_84945=" + new Date().getTime() + "|26b61cf0-718b-45d8-7f87-f43ce85c689e; " + expires, 3);
+}
+function attach_ezolpl() {
+    if(window.attachEvent) {
+        window.attachEvent('onload', create_ezolpl);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl();
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl;
+        }
+    }
+}
+attach_ezolpl();
+</script>
+	<title>Search Results for “shadow” – Housakicks</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="template" content="Mission News 1.28">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Housakicks » Feed" href="https://housakicks.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Housakicks » Comments Feed" href="https://housakicks.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Housakicks » Search Results for “shadow” Feed" href="https://housakicks.com/search/shadow/feed/rss2/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/housakicks.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="dpsp-frontend-style-css" href="https://housakicks.com/wp-content/plugins/social-pug/assets/css/style-frontend.css?ver=4.9.8" type="text/css" media="all">
+<link rel="stylesheet" id="ct-mission-news-google-fonts-css" href="//fonts.googleapis.com/css?family=Abril+Fatface%7CPT+Sans%3A400%2C700%7CPT+Serif%3A400%2C400i%2C700%2C700i&amp;subset=latin%2Clatin-ext&amp;ver=4.9.8" type="text/css" media="all">
+<link rel="stylesheet" id="ct-mission-news-font-awesome-css" href="https://housakicks.com/wp-content/themes/mission-news/assets/font-awesome/css/all.min.css?ver=4.9.8" type="text/css" media="all">
+<link rel="stylesheet" id="ct-mission-news-style-css" href="https://housakicks.com/wp-content/themes/mission-news/style.css?ver=4.9.8" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://housakicks.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.1" type="text/css" media="all">
+<script type='text/javascript' src='https://housakicks.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://housakicks.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://housakicks.com/wp-content/plugins/social-pug/assets/js/front-end.js?ver=4.9.8'></script>
+<link rel="https://api.w.org/" href="https://housakicks.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://housakicks.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://housakicks.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.8">
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-56657323-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	<style type="text/css" data-source="Social Pug"></style><link rel="icon" href="https://housakicks.com/wp-content/uploads/2017/01/HOUSAKICKS-LOGO-e1469987410284-100x100.jpg" sizes="32x32">
+<link rel="icon" href="https://housakicks.com/wp-content/uploads/2017/01/HOUSAKICKS-LOGO-e1469987410284.jpg" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://housakicks.com/wp-content/uploads/2017/01/HOUSAKICKS-LOGO-e1469987410284.jpg">
+<meta name="msapplication-TileImage" content="https://housakicks.com/wp-content/uploads/2017/01/HOUSAKICKS-LOGO-e1469987410284.jpg">
+<style>.ezoic-ad.box-3 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:420px;min-width:580px;text-align:center !important; }
+.ezoic-ad.box-2 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px; }
+.ezoic-ad.box-1 { display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:1070px;min-width:300px; }
+.ezoic-ad.large-leaderboard-1 { display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;text-align:center !important; }
+.ezoic-ad.medrectangle-2 { display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:90px;min-width:970px; }
+.ezoic-ad{display:inline-block;}
+.adtester-container-119{display:none !important}
+.adtester-container-128{display:none !important}
+.adtester-container-130{display:none !important}
+.adtester-container-114{display:none !important}
+.adtester-container-122{display:none !important}
+.adtester-container-142{display:none !important}
+.adtester-container-121{display:none !important}
+.adtester-container-145{display:none !important}
+.adtester-container-110{display:none !important}
+.adtester-container-113{display:none !important}
+.adtester-container-131{display:none !important}
+.adtester-container-111{display:none !important}
+.adtester-container-148{display:none !important}
+.adtester-container-134{display:none !important}
+.adtester-container-137{display:none !important}
+.adtester-container-139{display:none !important}
+.adtester-container-140{display:none !important}
+.adtester-container-144{display:none !important}
+.adtester-container-118{display:none !important}
+.adtester-container-125{display:none !important}
+.adtester-container-127{display:none !important}
+.adtester-container-105{display:none !important}
+.adtester-container-126{display:none !important}
+.adtester-container-136{display:none !important}
+.adtester-container-116{display:none !important}
+.adtester-container-120{display:none !important}
+.adtester-container-106{display:none !important}
+.adtester-container-129{display:none !important}
+.adtester-container-124{display:none !important}
+.adtester-container-135{display:none !important}
+.adtester-container-104{display:none !important}
+.adtester-container-115{display:none !important}
+.adtester-container-133{display:none !important}
+.adtester-container-101{display:none !important}
+.adtester-container-109{display:none !important}
+.adtester-container-149{display:none !important}
+.adtester-container-147{display:none !important}
+.adtester-container-141{display:none !important}
+.adtester-container-143{display:none !important}
+.adtester-container-123{display:none !important}
+.adtester-container-138{display:none !important}
+.adtester-container-132{display:none !important}
+.adtester-container-112{display:none !important}
+.adtester-container-117{display:none !important}
+
+		.ezmob-footer {
+			position: fixed; left: 0px; bottom: 0px; width: 100%; background: white; z-index: 100000;
+		}
+		body {
+			padding-bottom: 50px;
+		}
+		.ezmob-footer-desktop {
+			background-color:rgba(255, 255, 255, 0.8);
+			border-top:1px solid lightgray;
+			padding-top:5px;
+		}
+		.ezmob-footer-close {
+			cursor: pointer;
+			color: #b2b2b2;
+			border: 1px solid #b2b2b2;
+			border-radius: 20px;
+			background: #fff;
+			line-height: 20px;
+			display: inline-block;
+			font-size: 20px;
+			font-family: arial,sans-serif;
+			padding: 0 5px;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+			height: 24px;
+			width: 21px;
+		}
+	</style><link rel='canonical' href='https://housakicks.com/?s=shadow' />
+<script data-cfasync="false" type="text/javascript">window.google_analytics_uacct = "UA-108005419-50";</script>
+<script data-cfasync="false" type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['e._setAccount', 'UA-108005419-50']);
+_gaq.push(['f._setAccount', 'UA-38339005-1']);
+_gaq.push(['e._setDomainName', 'housakicks.com']);
+_gaq.push(['f._setDomainName', 'housakicks.com']);
+_gaq.push(['e._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['e._setCustomVar',2,'t','134',3]);
+_gaq.push(['e._setCustomVar',3,'rid','0',2]);
+_gaq.push(['e._setCustomVar',4,'bra','mod2',3]);
+_gaq.push(['e._setAllowAnchor',true]);
+_gaq.push(['e._setSiteSpeedSampleRate', 10]);
+_gaq.push(['f._setCustomVar',1,'template','pub_site',3]);
+_gaq.push(['f._setCustomVar',2,'domain','housakicks.com',3]);
+_gaq.push(['f._setSiteSpeedSampleRate', 20]);
+_gaq.push(['e._trackPageview']);
+_gaq.push(['f._trackPageview']);
+
+
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">var ezouid = "1";</script><base href="https://housakicks.com/?s=shadow"><script type='text/javascript'>
+var ezoTemplate = 'pub_site';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD -->
+<script type='text/javascript'>
+var soc_app_id = '0';
+var did = 84945;
+var ezdomain = 'housakicks.com';
+var ezoicSearchable = 1;
+</script>
+<!--{jquery}-->
+<!-- END EZHEAD -->
+<script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>
+__ez.queue.addFile('__ezf_ezosuigeneris', '//g.ezoic.net/ezosuigeneris.js', true, [], true, false, false, false);
+var __ez_ezosuigenerisEvt = function() { __ez.bit.AddAndFire(_ezaq['page_view_id'], [(new __ezDotData('universal_user_id', ezosuigeneris))]); };
+__ez.queue.addFunc('__ez_ezosuigenerisEvt', '__ez_ezosuigenerisEvt', null, false, ['__ezf_ezosuigeneris'], false, false, false, false);</script><script data-pagespeed-no-defer data-cfasync='false' type='text/javascript' style='display:none'>__ez.queue.addFile('__ezf_ezosuigenerisc', '//g.ezoic.net/ezosuigenerisc.js?nogen=1', true, [], true, false, false, false);</script></head>
+
+<body data-rsssl="1" id="mission-news" class="search search-results wp-custom-logo layout-double">
+<a class="skip-content" href="#main">Press "Enter" to skip to content</a>
+<div id="overflow-container" class="overflow-container">
+	<div id="max-width" class="max-width">
+				<header class="site-header" id="site-header" role="banner"><span id="ezoic-pub-ad-placeholder-108" class="ezoic-adpicker-ad"></span><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:420px;min-width:580px;text-align:center !important;' class='ezoic-ad box-3 adtester-container adtester-container-108' data-ez-name='housakicks_com-box-3'><span id='div-gpt-ad-housakicks_com-box-3-0' ezaw='580' ezah='400' style='position:relative;z-index:0;display:inline-block;min-height:400px;min-width:580px;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[580,400],'housakicks_com-box-3','ezslot_3']));</script></span></span>
+			<div class="top-nav">
+								<div id="menu-secondary-container" class="menu-secondary-container">
+					<div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
+	<nav class="menu"><ul id="menu-secondary-items" class="menu-secondary-items"><li id="menu-item-26269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26269"><a href="https://housakicks.com/air-jordans-release-date/">AIR JORDANS RELEASE DATE</a></li>
+<li id="menu-item-26270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26270"><a href="https://housakicks.com/adidas-release-date/">ADIDAS RELEASE DATE</a></li>
+<li id="menu-item-26271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26271"><a href="https://housakicks.com/nike-release-date-calendar/">NIKE RELEASE DATE CALENDAR</a></li>
+<li id="menu-item-26272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26272"><a href="https://housakicks.com/sneakers-release-date/">OTHER SNEAKERS RELEASE DATE</a></li>
+</ul></nav></div>
+				</div>
+				<ul id="social-media-icons" class="social-media-icons"><li>					<a class="twitter" target="_blank" href="https://twitter.com/housakicks">
+						<i class="fab fa-twitter" title="twitter"></i>
+					</a>
+					</li><li>					<a class="facebook" target="_blank" href="https://www.facebook.com/housakicks/">
+						<i class="fab fa-facebook" title="facebook"></i>
+					</a>
+					</li><li>					<a class="instagram" target="_blank" href="https://www.instagram.com/housakicks/">
+						<i class="fab fa-instagram" title="instagram"></i>
+					</a>
+					</li><li>					<a class="linkedin" target="_blank" href="https://www.linkedin.com/in/tayib-salami-20ba6847/">
+						<i class="fab fa-linkedin" title="linkedin"></i>
+					</a>
+					</li><li>					<a class="pinterest" target="_blank" href="https://www.pinterest.com/housakicks/pins/">
+						<i class="fab fa-pinterest" title="pinterest"></i>
+					</a>
+					</li><li>					<a class="google-plus" target="_blank" href="https://plus.google.com/101801653941869713849">
+						<i class="fab fa-google-plus" title="google-plus"></i>
+					</a>
+					</li><li>					<a class="youtube" target="_blank" href="https://www.youtube.com/channel/UCZPKChfkPh5p_RFN3A39aog?view_as=subscriber">
+						<i class="fab fa-youtube" title="youtube"></i>
+					</a>
+					</li><li>					<a class="email" target="_blank" href="mailto:mistourasal@gmail.com">
+						<i class="fas fa-envelope" title="email"></i>
+					</a>
+				</li></ul>			</div>
+			<div id="title-container" class="title-container"><div class="site-title"><a href="https://housakicks.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="100" height="63" src="https://housakicks.com/wp-content/uploads/2016/04/logo1-3.png" class="custom-logo" alt="Housakicks" itemprop="logo"></a></div><p class="date">December 2, 2018</p><p class="tagline">From the Community, For The Community</p>			</div>
+			<button id="toggle-navigation" class="toggle-navigation" name="toggle-navigation" aria-expanded="false">
+				<span class="screen-reader-text">open menu</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-272.000000, -21.000000)" fill="#000000"><g transform="translate(266.000000, 12.000000)"><g transform="translate(6.000000, 9.000000)"><rect class="top-bar" x="0" y="0" width="24" height="2"></rect><rect class="middle-bar" x="0" y="8" width="24" height="2"></rect><rect class="bottom-bar" x="0" y="16" width="24" height="2"></rect></g></g></g></g></svg>			</button>
+			<div id="menu-primary-container" class="menu-primary-container tier-1">
+				<div class="dropdown-navigation"><a id="back-button" class="back-button" href="#"><i class="fas fa-angle-left"></i> Back</a><span class="label"></span></div>
+<div id="menu-primary" class="menu-container menu-primary" role="navigation">
+    <nav class="menu"><ul id="menu-primary-items" class="menu-primary-items"><li id="menu-item-39809" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39809"><a href="https://housakicks.com/shop/">Shop</a></li>
+<li id="menu-item-1192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1192"><a href="https://housakicks.com/buying-service/">Shopping Proxy Service</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">open menu</span><i class="fas fa-angle-right"></i></button>
+<ul class="sub-menu">
+	<li id="menu-item-1209" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1209"><a href="https://housakicks.com/buying-service/">How Does It work?</a></li>
+	<li id="menu-item-1220" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1220"><a href="https://housakicks.com/fee-estimator/">Fee Estimator</a></li>
+	<li id="menu-item-1243" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1243"><a href="https://ircalc.usps.com/?country=10441">International Shipping Estimator</a></li>
+	<li id="menu-item-1227" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1227"><a href="http://www.dtlr.com/">Dtlr</a></li>
+	<li id="menu-item-1196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1196"><a href="http://http://www.champssports.com/">Champs</a></li>
+	<li id="menu-item-1228" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1228"><a href="http://www.citygear.com/">Citygear</a></li>
+	<li id="menu-item-1231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1231"><a href="http://www.eastbay.com/">Eastbay</a></li>
+	<li id="menu-item-1193" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1193"><a href="http://click.linksynergy.com/fs-bin/click?id=L2IuAcRq53U&amp;subid=&amp;offerid=439444.1&amp;type=10&amp;tmpid=10752&amp;RD_PARM1=http%3A%2F%2Fwww.finishline.com%2F">Finishline</a></li>
+	<li id="menu-item-1230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1230"><a href="http://www.footaction.com/">Footaction</a></li>
+	<li id="menu-item-1195" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1195"><a href="http://www.footlocker.com/">Footlocker</a></li>
+	<li id="menu-item-1229" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1229"><a href="http://www.jimmyjazz.com/">Jimmyjazz</a></li>
+	<li id="menu-item-1194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1194"><a href="http://http://www.nike.com/gb/en_gb/">Nike</a></li>
+</ul>
+</li>
+<li id="menu-item-1503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1503"><a href="https://housakicks.com/legit-sneaker-shops/">Legit Sneaker Shops</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">open menu</span><i class="fas fa-angle-right"></i></button>
+<ul class="sub-menu">
+	<li id="menu-item-2149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2149"><a href="https://housakicks.com/usa-sneaker-shops/">USA SNEAKER SHOPS</a></li>
+	<li id="menu-item-1504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1504"><a href="https://housakicks.com/australia-sneaker-shops/">Australia Sneaker Shops</a></li>
+	<li id="menu-item-1506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1506"><a href="https://housakicks.com/brazil-sneaker-shops/">Brazil Sneaker Shops</a></li>
+	<li id="menu-item-1505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1505"><a href="https://housakicks.com/belgium-sneaker-shops/">Belgium Sneaker Shops</a></li>
+	<li id="menu-item-1507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1507"><a href="https://housakicks.com/canada-sneaker-shops/">Canada Sneaker Shops</a></li>
+	<li id="menu-item-1508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1508"><a href="https://housakicks.com/france-sneaker-shops/">France Sneaker Shops</a></li>
+	<li id="menu-item-1509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1509"><a href="https://housakicks.com/germany-sneaker-shops/">Germany Sneaker Shops</a></li>
+	<li id="menu-item-1510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1510"><a href="https://housakicks.com/uk-sneaker-shops/">UK Sneaker Shops</a></li>
+</ul>
+</li>
+<li id="menu-item-1994" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1994"><a href="https://housakicks.com/sneaker-steals/">Sneaker Steals</a><button class="toggle-dropdown" aria-expanded="false" name="toggle-dropdown"><span class="screen-reader-text">open menu</span><i class="fas fa-angle-right"></i></button>
+<ul class="sub-menu">
+	<li id="menu-item-3179" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3179"><a href="https://housakicks.com/footlocker-steals/">Footlocker Steals</a></li>
+	<li id="menu-item-3178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3178"><a href="https://housakicks.com/finishline-steals/">Finishline Steals</a></li>
+	<li id="menu-item-3192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3192"><a href="https://housakicks.com/shiekhshoes-steals/">Shiekhshoes Steals</a></li>
+	<li id="menu-item-2157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2157"><a href="https://housakicks.com/coupons-discount-code/">Coupons DISCOUNT code</a></li>
+</ul>
+</li>
+<li id="menu-item-37971" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37971"><a href="https://housakicks.com/about-housakicks/">About Housakicks</a></li>
+<li id="menu-item-28642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28642"><a href="https://housakicks.com/advertise/">Advertise</a></li>
+<li id="menu-item-36836" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-36836"><a href="https://housakicks.com/category/real-vs-fake-sneakers/">Real VS Fake Sneakers</a></li>
+</ul></nav></div>
+			</div>
+		</header>
+					<aside id="below-header" class="widget-area widget-area-below-header active-1" role="complementary">
+		<section id="custom_html-20" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- Ezoic - leaderboard - top_of_page -->
+<span id="ezoic-pub-ad-placeholder-102"></span><span style='display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;' class='ezoic-ad box-2 adtester-container adtester-container-102' data-ez-name='housakicks_com-box-2'><span id='div-gpt-ad-housakicks_com-box-2-0' ezaw='970' ezah='90' style='position:relative;z-index:0;display:inline-block;min-height:90px;min-width:970px;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[970,90],'housakicks_com-box-2','ezslot_1']));</script></span></span>
+<!-- End Ezoic - leaderboard - top_of_page --></div></section>	</aside>
+		<div class="content-container">
+						<div class="layout-container">
+				    <aside class="sidebar sidebar-left" id="sidebar-left" role="complementary">
+        <div class="inner">
+            <section id="search-10" class="widget widget_search"><div class="search-form-container">
+    <form role="search" method="get" class="search-form" action="https://housakicks.com">
+        <input id="search-field" type="search" class="search-field" value="" name="s" title="Search" placeholder=" Search for...">
+        <input type="submit" class="search-submit" value="Search">
+    </form>
+</div></section><section id="ct_mission_news_post_list-1" class="widget widget_ct_mission_news_post_list"><div class="style-2"><h2 class="widget-title">Real VS Fake Sneakers-Latest</h2><ul><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/real-vs-fake-sneakers/real-vs-fake-air-jordan-12-gym-red-here-are-quick-ways-to-identify-the-fakes/">Real VS Fake Air Jordan 12 Gym Red  | Here Are Quick Ways To Identify The Fakes<img width="300" height="169" src="https://housakicks.com/wp-content/uploads/2018/11/real-vs-fake-air-jordan-12-gym-red-6-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/11/real-vs-fake-air-jordan-12-gym-red-6-300x169.jpg 300w, https://housakicks.com/wp-content/uploads/2018/11/real-vs-fake-air-jordan-12-gym-red-6-768x432.jpg 768w, https://housakicks.com/wp-content/uploads/2018/11/real-vs-fake-air-jordan-12-gym-red-6-1024x576.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/11/real-vs-fake-air-jordan-12-gym-red-6.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/real-vs-fake-sneakers/real-vs-fake-air-jordan-12-gym-red-here-are-quick-ways-to-identify-the-fakes/" class="title">Real VS Fake Air Jordan 12 Gym Red  | Here Are Quick Ways To Identify The Fakes</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">The replica pairs of the Jordan 12 gym red have been out for months but I was waiting to get my hands on an authentic...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/real-vs-fake-sneakers/real-vs-fake-air-jordan-1-unc-off-white-courtesy-of-eds-kicks/">Real Vs Fake Air Jordan 1 UNC Off White Courtesy Of EDS Kicks<img width="300" height="180" src="https://housakicks.com/wp-content/uploads/2018/11/Real-Vs-Fake-Air-Jordan-1-UNC-Off-White-Courtesy-Of-EDS-Kicks-300x180.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/11/Real-Vs-Fake-Air-Jordan-1-UNC-Off-White-Courtesy-Of-EDS-Kicks-300x180.jpg 300w, https://housakicks.com/wp-content/uploads/2018/11/Real-Vs-Fake-Air-Jordan-1-UNC-Off-White-Courtesy-Of-EDS-Kicks-768x460.jpg 768w, https://housakicks.com/wp-content/uploads/2018/11/Real-Vs-Fake-Air-Jordan-1-UNC-Off-White-Courtesy-Of-EDS-Kicks-1024x614.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/11/Real-Vs-Fake-Air-Jordan-1-UNC-Off-White-Courtesy-Of-EDS-Kicks.jpg 1248w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/real-vs-fake-sneakers/real-vs-fake-air-jordan-1-unc-off-white-courtesy-of-eds-kicks/" class="title">Real Vs Fake Air Jordan 1 UNC Off White Courtesy Of EDS Kicks</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">The Fake pairs of the Off White sneakers are the hardest to detect; I've avoided doing comparisons on these because without the backdrop of an&nbsp;...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/real-vs-fake-sneakers/real-vs-fake-air-jordan-18-xviii-white-royal-quick-tips-to-identify-it/">Real VS Fake Air Jordan 18 XVIII White Royal -Quick Tips To Identify It<img width="300" height="169" src="https://housakicks.com/wp-content/uploads/2018/11/Real-Vs-Fake-Air-jordan-18-XVIII-White-Royal-3-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/11/Real-Vs-Fake-Air-jordan-18-XVIII-White-Royal-3-300x169.jpg 300w, https://housakicks.com/wp-content/uploads/2018/11/Real-Vs-Fake-Air-jordan-18-XVIII-White-Royal-3-768x432.jpg 768w, https://housakicks.com/wp-content/uploads/2018/11/Real-Vs-Fake-Air-jordan-18-XVIII-White-Royal-3-1024x576.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/11/Real-Vs-Fake-Air-jordan-18-XVIII-White-Royal-3.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/real-vs-fake-sneakers/real-vs-fake-air-jordan-18-xviii-white-royal-quick-tips-to-identify-it/" class="title">Real VS Fake Air Jordan 18 XVIII White Royal -Quick Tips To Identify It</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">Here are quick ways to identify the fake air jrodan 18 white royal. Both sneakers used in this comparison are size 9.5. You can clearly...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/real-vs-fake-sneakers/beware-of-the-fake-air-jordan-4-iv-tattoo-chinese-single-day/">Beware Of The Fake Air Jordan 4 IV Tattoo Chinese Single Day<img width="300" height="225" src="https://housakicks.com/wp-content/uploads/2018/11/Beware-Of-The-Fake-Air-Jordan-4-IV-Tattoo-Chinese-Single-Day-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/11/Beware-Of-The-Fake-Air-Jordan-4-IV-Tattoo-Chinese-Single-Day-300x225.jpg 300w, https://housakicks.com/wp-content/uploads/2018/11/Beware-Of-The-Fake-Air-Jordan-4-IV-Tattoo-Chinese-Single-Day.jpg 740w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/real-vs-fake-sneakers/beware-of-the-fake-air-jordan-4-iv-tattoo-chinese-single-day/" class="title">Beware Of The Fake Air Jordan 4 IV Tattoo Chinese Single Day</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">Fake pairs of the&nbsp;Air Jordan 4 IV Tattoo's are out and you'll do well to check the pictures below carefully to avoid them. I don't...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/real-vs-fake-sneakers/fake-air-jordan-17-solefly-spotted-quick-ways-to-identify-it/">Fake Air Jordan 17 Solefly Spotted- Quick Ways To Identify It<img width="300" height="169" src="https://housakicks.com/wp-content/uploads/2018/10/Fake-Air-Jordan-17-Solefly-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/10/Fake-Air-Jordan-17-Solefly-300x169.jpg 300w, https://housakicks.com/wp-content/uploads/2018/10/Fake-Air-Jordan-17-Solefly-768x432.jpg 768w, https://housakicks.com/wp-content/uploads/2018/10/Fake-Air-Jordan-17-Solefly-1024x576.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/10/Fake-Air-Jordan-17-Solefly.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/real-vs-fake-sneakers/fake-air-jordan-17-solefly-spotted-quick-ways-to-identify-it/" class="title">Fake Air Jordan 17 Solefly Spotted- Quick Ways To Identify It</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">Bootleggers keep stretching their limits by taking on more challenging sneakers. Yesterday I came across a fake pair of the Air Jordan 17 solefly and...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/real-vs-fake-sneakers/fake-air-jordan-3-iii-q54-quai-54-spotted-quick-ways-to-identify-it/">Fake Air Jordan 3 III Q54 Quai 54 Spotted- Quick Ways To Identify It<img width="300" height="169" src="https://housakicks.com/wp-content/uploads/2018/10/Fake-air-jordan-III-3-Q54-Quai-54-3-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/10/Fake-air-jordan-III-3-Q54-Quai-54-3-300x169.jpg 300w, https://housakicks.com/wp-content/uploads/2018/10/Fake-air-jordan-III-3-Q54-Quai-54-3-768x432.jpg 768w, https://housakicks.com/wp-content/uploads/2018/10/Fake-air-jordan-III-3-Q54-Quai-54-3-1024x576.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/10/Fake-air-jordan-III-3-Q54-Quai-54-3.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/real-vs-fake-sneakers/fake-air-jordan-3-iii-q54-quai-54-spotted-quick-ways-to-identify-it/" class="title">Fake Air Jordan 3 III Q54 Quai 54 Spotted- Quick Ways To Identify It</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">This year's Quai tournament in France highlighted the Jordan 3 silhouette. The shoe was limited but hasn't really been coveted by many, I particularly don't...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/real-vs-fake-sneakers/fake-air-foamposite-one-nrg-galaxy-spotted-dont-get-got-quick-ways-to-spot-it/">Fake Air Foamposite One NRG Galaxy Spotted- Don’t Get Got | Quick Ways To Spot It<img width="300" height="169" src="https://housakicks.com/wp-content/uploads/2018/09/Fake-Air-Foamposite-One-NRG-Galaxy-4-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/09/Fake-Air-Foamposite-One-NRG-Galaxy-4-300x169.jpg 300w, https://housakicks.com/wp-content/uploads/2018/09/Fake-Air-Foamposite-One-NRG-Galaxy-4-768x432.jpg 768w, https://housakicks.com/wp-content/uploads/2018/09/Fake-Air-Foamposite-One-NRG-Galaxy-4-1024x576.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/09/Fake-Air-Foamposite-One-NRG-Galaxy-4.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/real-vs-fake-sneakers/fake-air-foamposite-one-nrg-galaxy-spotted-dont-get-got-quick-ways-to-spot-it/" class="title">Fake Air Foamposite One NRG Galaxy Spotted- Don’t Get Got | Quick Ways To Spot It</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">The 2012 NBA All star featured a lot of memorable sneakers and one of those was the air foamposite one NRG galaxy. The shoes were...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/real-vs-fake-sneakers/fake-air-jordan-1-court-purple-spotted-quick-ways-to-identify-it/">Fake Air Jordan 1 Court Purple Spotted- Quick Ways To Identify It<img width="300" height="169" src="https://housakicks.com/wp-content/uploads/2018/09/fake-air-jordan-1-high-og-court-purple-1-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/09/fake-air-jordan-1-high-og-court-purple-1-300x169.jpg 300w, https://housakicks.com/wp-content/uploads/2018/09/fake-air-jordan-1-high-og-court-purple-1-768x432.jpg 768w, https://housakicks.com/wp-content/uploads/2018/09/fake-air-jordan-1-high-og-court-purple-1-1024x576.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/09/fake-air-jordan-1-high-og-court-purple-1.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/real-vs-fake-sneakers/fake-air-jordan-1-court-purple-spotted-quick-ways-to-identify-it/" class="title">Fake Air Jordan 1 Court Purple Spotted- Quick Ways To Identify It</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">We shouldn't be surprised at the sight of the&nbsp;Fake Air Jordan 1 Court Purple. This was bound to happen especially with the current resale value...</div></div></li></ul></div></section><section id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">AHN | The Network</h2><div class="menu-ahn-container"><ul id="menu-ahn" class="menu"><li id="menu-item-36834" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-36834"><a href="https://housakicks.com/real-vs-fake-sneakers/legit-check-air-jordan-retros-adidas-yeezy-nike-sneakers/">Legit Check For Air Jordan Retros, Adidas Yeezy , Nike Sneakers &amp; More</a></li>
+<li id="menu-item-34080" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34080"><a href="https://www.youtube.com/channel/UCZPKChfkPh5p_RFN3A39aog">Visit Housakicks TV on YouTube</a></li>
+<li id="menu-item-34081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34081"><a href="http://www.youtube.com/archbyccb">Visit ARCH TV on YouTube</a></li>
+<li id="menu-item-34082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34082"><a href="http://www.arch-usa.com">Visit ARCH-USA</a></li>
+<li id="menu-item-37940" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37940"><a href="http://tayibs.com/">Visit Tayibs.com</a></li>
+<li id="menu-item-37938" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37938"><a href="http://www.901prepscoop.com">Visit 901Prepscoop | Sports Coverage</a></li>
+</ul></div></section><section id="ct_mission_news_post_list-4" class="widget widget_ct_mission_news_post_list"><div class="style-2"><ul><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/basketballsport/how-will-jimmy-butler-fit-in-the-sixers-76ers-offense-courtesy-of-coach-nick/">How Will Jimmy Butler Fit In The Sixers 76ers Offense Courtesy Of Coach Nick<img width="300" height="168" src="https://housakicks.com/wp-content/uploads/2018/11/How-Will-Jimmy-Butler-Fit-In-The-Sixers-76ers-Offense-Courtesy-Of-Coach-Nick-300x168.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/11/How-Will-Jimmy-Butler-Fit-In-The-Sixers-76ers-Offense-Courtesy-Of-Coach-Nick-300x168.jpg 300w, https://housakicks.com/wp-content/uploads/2018/11/How-Will-Jimmy-Butler-Fit-In-The-Sixers-76ers-Offense-Courtesy-Of-Coach-Nick-768x431.jpg 768w, https://housakicks.com/wp-content/uploads/2018/11/How-Will-Jimmy-Butler-Fit-In-The-Sixers-76ers-Offense-Courtesy-Of-Coach-Nick-1024x575.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/11/How-Will-Jimmy-Butler-Fit-In-The-Sixers-76ers-Offense-Courtesy-Of-Coach-Nick.jpg 1243w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/basketballsport/how-will-jimmy-butler-fit-in-the-sixers-76ers-offense-courtesy-of-coach-nick/" class="title">How Will Jimmy Butler Fit In The Sixers 76ers Offense Courtesy Of Coach Nick</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">Jimmy Butler and the Timberwolves have finally parted ways after many weeks of uncertainties. Butler is of the old school mentality of not sugar coating...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/basketballsport/celtics-raptors-game-breakdown-courtesy-of-coach-nick/">Celtics @ Raptors Game Breakdown Courtesy Of  Coach Nick<img width="300" height="174" src="https://housakicks.com/wp-content/uploads/2018/10/Celtics-@-Raptors-Game-Breakdown-Courtesy-Of-Coach-Nick-300x174.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/10/Celtics-@-Raptors-Game-Breakdown-Courtesy-Of-Coach-Nick-300x174.jpg 300w, https://housakicks.com/wp-content/uploads/2018/10/Celtics-@-Raptors-Game-Breakdown-Courtesy-Of-Coach-Nick-768x445.jpg 768w, https://housakicks.com/wp-content/uploads/2018/10/Celtics-@-Raptors-Game-Breakdown-Courtesy-Of-Coach-Nick-1024x593.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/10/Celtics-@-Raptors-Game-Breakdown-Courtesy-Of-Coach-Nick.jpg 1246w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/basketballsport/celtics-raptors-game-breakdown-courtesy-of-coach-nick/" class="title">Celtics @ Raptors Game Breakdown Courtesy Of  Coach Nick</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">The Raptors without a doubt got the better player in the deal that sent Derozan to the Spurs. This is no disrespect to Demar, he...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/basketballsport/blazers-vs-lakers-game-breakdown-courtesy-of-coach-nick/">Blazers VS Lakers Game Breakdown Courtesy Of Coach Nick<img width="300" height="167" src="https://housakicks.com/wp-content/uploads/2018/10/Blazers-VS-Lakers-Game-Breakdown-Courtesy-Of-Coach-Nick-300x167.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/10/Blazers-VS-Lakers-Game-Breakdown-Courtesy-Of-Coach-Nick-300x167.jpg 300w, https://housakicks.com/wp-content/uploads/2018/10/Blazers-VS-Lakers-Game-Breakdown-Courtesy-Of-Coach-Nick-768x427.jpg 768w, https://housakicks.com/wp-content/uploads/2018/10/Blazers-VS-Lakers-Game-Breakdown-Courtesy-Of-Coach-Nick-1024x570.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/10/Blazers-VS-Lakers-Game-Breakdown-Courtesy-Of-Coach-Nick.jpg 1120w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/basketballsport/blazers-vs-lakers-game-breakdown-courtesy-of-coach-nick/" class="title">Blazers VS Lakers Game Breakdown Courtesy Of Coach Nick</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">NBA fans couldn't wait to see what King James was going to do on his Lakers debut. Unfortunately he met a fierce opponent in the...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/basketballsport/kawhi-leonard-started-off-where-he-left-off-preseason-raptors-debut/">Kawhi Leonard Started Off Where He Left Off | Preseason Raptors Debut<img width="300" height="154" src="https://housakicks.com/wp-content/uploads/2018/10/Kawhi-Leonard-Started-Off-Where-He-Left-Off-300x154.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/10/Kawhi-Leonard-Started-Off-Where-He-Left-Off-300x154.jpg 300w, https://housakicks.com/wp-content/uploads/2018/10/Kawhi-Leonard-Started-Off-Where-He-Left-Off-768x395.jpg 768w, https://housakicks.com/wp-content/uploads/2018/10/Kawhi-Leonard-Started-Off-Where-He-Left-Off.jpg 837w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/basketballsport/kawhi-leonard-started-off-where-he-left-off-preseason-raptors-debut/" class="title">Kawhi Leonard Started Off Where He Left Off | Preseason Raptors Debut</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">In his last NBA season with the Spurs Kawhi Leonard was involved in a circus that left a lot of us thinking if he was...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/basketballsport/kyrie-irving-or-damian-lillard-courtesy-of-by-all-means-bastketball/">Kyrie Irving Or Damian Lillard Courtesy Of By All Means Bastketball<img width="300" height="164" src="https://housakicks.com/wp-content/uploads/2018/09/Kyrie-Irving-Or-Damian-Lillard-Courtesy-Of-By-All-Means-Bastketball-300x164.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/09/Kyrie-Irving-Or-Damian-Lillard-Courtesy-Of-By-All-Means-Bastketball-300x164.jpg 300w, https://housakicks.com/wp-content/uploads/2018/09/Kyrie-Irving-Or-Damian-Lillard-Courtesy-Of-By-All-Means-Bastketball.jpg 554w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/basketballsport/kyrie-irving-or-damian-lillard-courtesy-of-by-all-means-bastketball/" class="title">Kyrie Irving Or Damian Lillard Courtesy Of By All Means Bastketball</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">Both Damian Lillard and Kyrie Irving are part of the new breed of guards the NBA has been graced with- the type of players who...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/basketballsport/jokic-or-joel-embiid-who-is-the-overall-better-big-man/">Jokic Or Joel Embiid, Who is The Overall Better Big Man?<img width="300" height="168" src="https://housakicks.com/wp-content/uploads/2018/08/Jokic-Or-Joel-Embiid-Who-is-The-Overall-Better-Big-Man-300x168.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/08/Jokic-Or-Joel-Embiid-Who-is-The-Overall-Better-Big-Man-300x168.jpg 300w, https://housakicks.com/wp-content/uploads/2018/08/Jokic-Or-Joel-Embiid-Who-is-The-Overall-Better-Big-Man-768x431.jpg 768w, https://housakicks.com/wp-content/uploads/2018/08/Jokic-Or-Joel-Embiid-Who-is-The-Overall-Better-Big-Man-1024x574.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/08/Jokic-Or-Joel-Embiid-Who-is-The-Overall-Better-Big-Man.jpg 1122w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/basketballsport/jokic-or-joel-embiid-who-is-the-overall-better-big-man/" class="title">Jokic Or Joel Embiid, Who is The Overall Better Big Man?</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">Nikola JoKic or Joel Embiid? The landscape of the NBA has changed and now centers are leaving their natural position and are expected to do...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/basketballsport/how-will-carmelo-anthony-fit-with-the-rockets/">How Will Carmelo Anthony Fit With The Rockets<img width="300" height="181" src="https://housakicks.com/wp-content/uploads/2018/08/How-Will-Carmelo-Anthony-Fit-With-The-Rockets-1-300x181.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/08/How-Will-Carmelo-Anthony-Fit-With-The-Rockets-1-300x181.jpg 300w, https://housakicks.com/wp-content/uploads/2018/08/How-Will-Carmelo-Anthony-Fit-With-The-Rockets-1-768x463.jpg 768w, https://housakicks.com/wp-content/uploads/2018/08/How-Will-Carmelo-Anthony-Fit-With-The-Rockets-1-1024x617.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/08/How-Will-Carmelo-Anthony-Fit-With-The-Rockets-1.jpg 1174w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/basketballsport/how-will-carmelo-anthony-fit-with-the-rockets/" class="title">How Will Carmelo Anthony Fit With The Rockets</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">Carmelo Anthony's sojourn with Westbrook and the OKC Thunder wasn't very successful and frankly no one is to be blamed for it. Melo's lack of...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/basketballsport/cj-mccollum-kevin-durant-discuss-the-most-unguardable-players-in-the-nba/">CJ McCollum &amp; Kevin Durant Discuss The Most Unguardable Players In The NBA<img width="300" height="172" src="https://housakicks.com/wp-content/uploads/2018/07/CJ-McCollum-Kevin-Durant-Discuss-The-Most-Unguardable-Players-In-The-NBA-300x172.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/07/CJ-McCollum-Kevin-Durant-Discuss-The-Most-Unguardable-Players-In-The-NBA-300x172.jpg 300w, https://housakicks.com/wp-content/uploads/2018/07/CJ-McCollum-Kevin-Durant-Discuss-The-Most-Unguardable-Players-In-The-NBA-768x440.jpg 768w, https://housakicks.com/wp-content/uploads/2018/07/CJ-McCollum-Kevin-Durant-Discuss-The-Most-Unguardable-Players-In-The-NBA.jpg 832w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/basketballsport/cj-mccollum-kevin-durant-discuss-the-most-unguardable-players-in-the-nba/" class="title">CJ McCollum &amp; Kevin Durant Discuss The Most Unguardable Players In The NBA</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">If you are tired of hearing emotionally charged sports analysts babble about the game of basketball in a very subjective way, then I'll invite you...</div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/basketballsport/carmelo-anthony-is-planning-on-joining-the-houston-rockets/">Carmelo Anthony Is Planning On Joining The Houston Rockets<img width="300" height="300" src="https://housakicks.com/wp-content/uploads/2018/07/Carmelo-Anthony-To-Join-The-Rockets-300x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/07/Carmelo-Anthony-To-Join-The-Rockets-300x300.jpg 300w, https://housakicks.com/wp-content/uploads/2018/07/Carmelo-Anthony-To-Join-The-Rockets-150x150.jpg 150w, https://housakicks.com/wp-content/uploads/2018/07/Carmelo-Anthony-To-Join-The-Rockets-768x767.jpg 768w, https://housakicks.com/wp-content/uploads/2018/07/Carmelo-Anthony-To-Join-The-Rockets.jpg 958w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/basketballsport/carmelo-anthony-is-planning-on-joining-the-houston-rockets/" class="title">Carmelo Anthony Is Planning On Joining The Houston Rockets</a><div class="post-byline">By tayib salami</div></div></div><div class="bottom"><div class="excerpt">At this point, the NBA has become a circus and most teams are looking to create their own version of the Big 3, but does...</div></div></li></ul></div></section>        </div>
+    </aside>
+				<section id="main" class="main" role="main">
+						<aside id="above-main" class="widget-area widget-area-above-main active-1" role="complementary">
+		<section id="custom_html-23" class="widget_text widget widget_custom_html"><h2 class="widget-title">Search Footlocker Products</h2><div class="textwidget custom-html-widget"><form id="navSearchForm" action="https://www.footlocker.com/searchresults/" formid="navSearchForm"><input type="hidden" name="id" value="L2IuAcRq53U"><input type="hidden" name="offerid" value="363447"><input type="hidden" name="bnid" value="1044"><input type="hidden" name="subid" value="">
+<div style="position: relative; width: 468px; background: #000000;">
+      <img src="
+http://www.footlocker.com/ns/showcases/linkshare/images/fl-search-ad-bg.jpg
+" height="60" width="468" border="0">
+        <input type="hidden" value="k" name="search">
+      <div style="position: absolute; top: 19px; left: 272px;">
+        <input name="keyword" style="width: 150px; background: #000000;
+color: #999999; font-size: 16px; border:none;" type="text" border="0" maxlength="100">
+    </div>
+      <div style="position: absolute; top: 12px; left: 424px;">
+        <input type="submit" value="" style="background: url( http://www.footlocker.com/ns/showcases/linkshare/images/art-search-arrow.gif
+) no-repeat; cursor:pointer; cursor:hand; border:none; height: 39px; width:24px;">
+    </div>
+</div>
+</form><img width="1" height="1" border="0" alt="" src="https://ad.linksynergy.com/fs-bin/show?id=L2IuAcRq53U&amp;bids=363447&amp;type=5"></div></section>	</aside>
+    <div class="archive-header search-box">
+        <h1>
+            47 search results for “shadow”        </h1>
+        <div class="search-form-container">
+    <form role="search" method="get" class="search-form" action="https://housakicks.com">
+        <input id="search-field" type="search" class="search-field" value="" name="s" title="Search" placeholder=" Search for...">
+        <input type="submit" class="search-submit" value="Search">
+    </form>
+</div>    </div>
+    <div id="loop-container" class="loop-container">
+        <div class="post-39672 post type-post status-publish format-standard has-post-thumbnail hentry category-air-jordan category-basketball-shoes category-buy-it-now category-lifestyle category-nike-basketball tag-575441-013 tag-air-jordan-1-high-og-shadow-black-grey-555088-013 tag-buy-aj1-shadow tag-jordan-1-shadow entry">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/buy-it-now/where-to-buy-the-air-jordan-1-high-og-shadow-black-grey-555088-013/">Where To Buy The Air Jordan 1 High OG Shadow Black Grey 555088-013<img width="657" height="567" src="https://housakicks.com/wp-content/uploads/2018/04/air-jordan-1-high-og-shadow-black-grey-555088-013-1.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/04/air-jordan-1-high-og-shadow-black-grey-555088-013-1.jpg 657w, https://housakicks.com/wp-content/uploads/2018/04/air-jordan-1-high-og-shadow-black-grey-555088-013-1-300x259.jpg 300w, https://housakicks.com/wp-content/uploads/2018/04/air-jordan-1-high-og-shadow-black-grey-555088-013-1-600x518.jpg 600w" sizes="(max-width: 657px) 100vw, 657px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/buy-it-now/where-to-buy-the-air-jordan-1-high-og-shadow-black-grey-555088-013/">Where To Buy The Air Jordan 1 High OG Shadow Black Grey 555088-013</a>
+			</h2>
+			<div class="post-byline">April 13, 2018</div>		</div><span id="ezoic-pub-ad-placeholder-110" class="ezoic-adpicker-ad"></span>
+		<div class="post-content">
+			<p>The Air Jordan 1 High OG Shadow Black Grey is officially coming out tomorrow, if you’re interested in figuring out how many pairs Nike made…</p>
+		</div>
+	</article>
+	</div>	<aside id="after-first-post" class="widget-area widget-area-after-first-post active-2" role="complementary">
+		<section id="rss-3" class="widget widget_rss"><h2 class="widget-title"><a class="rsswidget" href="https://arch-usa.com/"><img class="rss-widget-icon" style="border:0" width="14" height="14" src="https://housakicks.com/wp-includes/images/rss.png" alt="RSS"></a> <a class="rsswidget" href="https://arch-usa.com/">AHN | ARCH Recent Posts</a></h2><ul><li><a class="rsswidget" href="https://arch-usa.com/q-a-with-coddi-footwears-matthew-walters-new-footwear-company-challenges-project-exec/">Q &amp; A with CODDI™ Footwear’s Matthew Walters: New Footwear Company Challenges | Project + Exec</a> <cite>Chris Burns</cite></li><li><a class="rsswidget" href="https://arch-usa.com/insider-ties-episode-130-kawhi-hasnt-signed-yet-but-chino-and-under-armour-actually-works/">Insider Ties Episode 130 | Kawhi Hasnt Signed Yet but Chino and Under Armour Actually Works</a> <cite>Chris Burns</cite></li><li><a class="rsswidget" href="https://arch-usa.com/nike-react-element-55-black-white-bq6166-003-authentic-verification/">Nike React Element 55 Black/White BQ6166-003 | Authentic Verification</a> <cite>Chris Burns</cite></li><li><a class="rsswidget" href="https://arch-usa.com/nike-react-element-55-black-aurora-green-cool-grey-bq6166004-authentic-verification/">Nike React Element 55 Black/Aurora Green-Cool Grey BQ6166004 | Authentic Verification</a> <cite>Chris Burns</cite></li></ul></section><section id="custom_html-25" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- Ezoic - after first post - sidebar -->
+<span id="ezoic-pub-ad-placeholder-103"></span><span style='display:inline-block;float:none !important;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:1070px;min-width:300px;' class='ezoic-ad box-1 adtester-container adtester-container-103' data-ez-name='housakicks_com-box-1'><span id='div-gpt-ad-housakicks_com-box-1-0' ezaw='300' ezah='1050' style='position:relative;z-index:0;display:inline-block;min-height:1050px;min-width:300px;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[300,1050],'housakicks_com-box-1','ezslot_0']));</script></span><span style='width:300px;display:block;height:14px;margin:auto' class='reportline'><span style='text-align:center;font-size: smaller;float:left;line-height:normal;'><a href='https://www.ezoic.com/what-is-ezoic/' target='_blank' style='cursor:pointer'/><img src='https://d3hwh14livah35.cloudfront.net/ezoic.png' style='height:12px !important; padding:2px !important; border:0px !important; cursor:pointer !important; width: 58px !important; margin:0 !important; box-sizing: content-box !important;'/></a></span><span id="ez-report-ad-button" name="?pageview_id=26b61cf0-718b-45d8-7f87-f43ce85c689e&ad_position_id=103&impression_group_id=housakicks_com-box-1/2018-12-02/1337531&ad_size=300x1050&domain_id=84945&url=https://housakicks.com/?s=shadow" style='cursor: pointer!important; font-size:12px !important;color: #a5a5a5 ;float:right;text-decoration:none !important;font-family:arial !important;line-height:normal;'>report this ad</span></span></span>
+<!-- End Ezoic - after first post - sidebar --></div></section>	</aside>
+<div class="post-39594 post type-post status-publish format-standard has-post-thumbnail hentry category-air-jordan category-basketball-shoes category-business category-lifestyle tag-air-jordan-1-og-shadow tag-chris-paul tag-cp3 tag-jordan-1-shadow entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/lifestyle/cp3-air-jordan-1-og-shadow-basketball-life-sneakers/">CP3, Air Jordan 1 OG Shadow, Basketball, Life &amp; Sneakers<img width="935" height="1024" src="https://housakicks.com/wp-content/uploads/2018/04/CP3-Air-Jordan-1-OG-Shadow-Basketball-Life-Sneakers-935x1024.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/04/CP3-Air-Jordan-1-OG-Shadow-Basketball-Life-Sneakers.jpg 935w, https://housakicks.com/wp-content/uploads/2018/04/CP3-Air-Jordan-1-OG-Shadow-Basketball-Life-Sneakers-274x300.jpg 274w, https://housakicks.com/wp-content/uploads/2018/04/CP3-Air-Jordan-1-OG-Shadow-Basketball-Life-Sneakers-768x841.jpg 768w, https://housakicks.com/wp-content/uploads/2018/04/CP3-Air-Jordan-1-OG-Shadow-Basketball-Life-Sneakers-600x657.jpg 600w" sizes="(max-width: 935px) 100vw, 935px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/lifestyle/cp3-air-jordan-1-og-shadow-basketball-life-sneakers/">CP3, Air Jordan 1 OG Shadow, Basketball, Life &amp; Sneakers</a>
+			</h2>
+			<div class="post-byline">April 10, 2018</div>		</div>
+	</article>
+	</div><div class="post-39550 post type-post status-publish format-standard has-post-thumbnail hentry category-air-jordan category-basketball-shoes category-buy-it-now category-lifestyle category-nike-basketball category-sneaker-talk tag-310805-002 tag-air-jordan-x-shadow tag-buy-jordan-10-shadow tag-buy-shadow-10 tag-jordan-10-shadow entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/buy-it-now/air-jordan-10-x-dark-shadow-310805-002-inflation-buy-it-now/">Air Jordan 10 X Dark Shadow 310805-002| Inflation | Buy It Now<img width="1024" height="1024" src="https://housakicks.com/wp-content/uploads/2018/04/air-jordan-10-x-dark-shadow-310805-002-1024x1024.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/04/air-jordan-10-x-dark-shadow-310805-002.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/04/air-jordan-10-x-dark-shadow-310805-002-150x150.jpg 150w, https://housakicks.com/wp-content/uploads/2018/04/air-jordan-10-x-dark-shadow-310805-002-300x300.jpg 300w, https://housakicks.com/wp-content/uploads/2018/04/air-jordan-10-x-dark-shadow-310805-002-768x768.jpg 768w, https://housakicks.com/wp-content/uploads/2018/04/air-jordan-10-x-dark-shadow-310805-002-900x900.jpg 900w, https://housakicks.com/wp-content/uploads/2018/04/air-jordan-10-x-dark-shadow-310805-002-600x600.jpg 600w, https://housakicks.com/wp-content/uploads/2018/04/air-jordan-10-x-dark-shadow-310805-002-100x100.jpg 100w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/buy-it-now/air-jordan-10-x-dark-shadow-310805-002-inflation-buy-it-now/">Air Jordan 10 X Dark Shadow 310805-002| Inflation | Buy It Now</a>
+			</h2>
+			<div class="post-byline">April 9, 2018</div>		</div>
+	</article>
+	</div><div class="post-39423 post type-post status-publish format-standard has-post-thumbnail hentry category-air-jordan category-legit-check category-real-vs-fake-sneakers tag-555088-013 tag-fake-air-jrodan-1-shadow tag-how-to-spot-fake-air-jordan-1-shadow tag-identify-fake-jordan-1 tag-real-vs-fake-jordan-1-og-shadow entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/real-vs-fake-sneakers/fake-air-jordan-1-og-shadow-spotted-quick-ways-to-identify-it/">Fake Air Jordan 1 OG Shadow Spotted-Quick Ways To Identify It<img width="1024" height="576" src="https://housakicks.com/wp-content/uploads/2018/04/Fake-Air-jordan-1-OG-Shadow-555088-013-Real-Vs-Fake-5-1024x576.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/04/Fake-Air-jordan-1-OG-Shadow-555088-013-Real-Vs-Fake-5.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/04/Fake-Air-jordan-1-OG-Shadow-555088-013-Real-Vs-Fake-5-300x169.jpg 300w, https://housakicks.com/wp-content/uploads/2018/04/Fake-Air-jordan-1-OG-Shadow-555088-013-Real-Vs-Fake-5-768x432.jpg 768w, https://housakicks.com/wp-content/uploads/2018/04/Fake-Air-jordan-1-OG-Shadow-555088-013-Real-Vs-Fake-5-600x338.jpg 600w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/real-vs-fake-sneakers/fake-air-jordan-1-og-shadow-spotted-quick-ways-to-identify-it/">Fake Air Jordan 1 OG Shadow Spotted-Quick Ways To Identify It</a>
+			</h2>
+			<div class="post-byline">April 3, 2018</div>		</div>
+	</article>
+	</div><div class="post-39089 post type-post status-publish format-standard has-post-thumbnail hentry category-air-jordan category-buy-it-now category-legit-sneaker-list category-lifestyle tag-2018-air-jordan-1-shadow-og-555088-013 tag-air-jordan-1-og-shadow tag-aj1-og-shadow tag-buy-jordan-1-shadow tag-how-many-pairs-made entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/buy-it-now/2018-air-jordan-1-shadow-how-many-made-what-does-the-inflation-say/">2018 Air Jordan 1 Shadow | How Many Made &amp; What Does The Inflation Say?<img width="1024" height="682" src="https://housakicks.com/wp-content/uploads/2018/03/2018-Air-Jordan-1-Shadow-OG-555088-013-1024x682.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/03/2018-Air-Jordan-1-Shadow-OG-555088-013.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/03/2018-Air-Jordan-1-Shadow-OG-555088-013-600x400.jpg 600w, https://housakicks.com/wp-content/uploads/2018/03/2018-Air-Jordan-1-Shadow-OG-555088-013-300x200.jpg 300w, https://housakicks.com/wp-content/uploads/2018/03/2018-Air-Jordan-1-Shadow-OG-555088-013-768x512.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/buy-it-now/2018-air-jordan-1-shadow-how-many-made-what-does-the-inflation-say/">2018 Air Jordan 1 Shadow | How Many Made &amp; What Does The Inflation Say?</a>
+			</h2>
+			<div class="post-byline">March 16, 2018</div>		</div>
+	</article>
+	</div><div class="post-39032 post type-post status-publish format-standard has-post-thumbnail hentry category-adidas tag-adidas-nmd tag-adidas-shadow-knit entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/adidas/adidas-shadow-knit-tech-is-not-the-update-needed-to-push-nmd-forward/">adidas ‘Shadow Knit’ Tech is not the Update Needed To Push NMD Forward&nbsp;<img width="640" height="480" src="https://housakicks.com/wp-content/uploads/2018/03/503030.jpeg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/03/503030.jpeg 640w, https://housakicks.com/wp-content/uploads/2018/03/503030-600x450.jpeg 600w, https://housakicks.com/wp-content/uploads/2018/03/503030-300x225.jpeg 300w" sizes="(max-width: 640px) 100vw, 640px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/adidas/adidas-shadow-knit-tech-is-not-the-update-needed-to-push-nmd-forward/">adidas ‘Shadow Knit’ Tech is not the Update Needed To Push NMD Forward&nbsp;</a>
+			</h2>
+			<div class="post-byline">March 13, 2018</div>		</div>
+	</article>
+	</div><div class="post-35710 post type-post status-publish format-standard has-post-thumbnail hentry category-saucony tag-saucony tag-shadow-6000-space-pack entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/saucony/saucony-drops-intergalactic-classic-shadow-6000-md-space/">Saucony Drops An Intergalactic Classic | Shadow 6000 MD Space<img width="1024" height="384" src="https://housakicks.com/wp-content/uploads/2017/10/pdp-slot-20170929-Ospace-1024x384.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2017/10/pdp-slot-20170929-Ospace.jpg 1024w, https://housakicks.com/wp-content/uploads/2017/10/pdp-slot-20170929-Ospace-600x225.jpg 600w, https://housakicks.com/wp-content/uploads/2017/10/pdp-slot-20170929-Ospace-300x113.jpg 300w, https://housakicks.com/wp-content/uploads/2017/10/pdp-slot-20170929-Ospace-768x288.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/saucony/saucony-drops-intergalactic-classic-shadow-6000-md-space/">Saucony Drops An Intergalactic Classic | Shadow 6000 MD Space</a>
+			</h2>
+			<div class="post-byline">October 14, 2017</div>		</div>
+	</article>
+	</div><div class="post-34510 post type-post status-publish format-standard has-post-thumbnail hentry category-air-jordan category-basketball-shoes category-buy-it-now category-legit-sneaker-list category-lifestyle category-nike-basketball category-sale category-sneaker-steals-and-deals tag-aa3993-034 tag-air-jordan-1-camo-print tag-air-jordan-1-shadow-og-camo tag-air-jordan-shoes tag-buy-jordan-1-camo entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/buy-it-now/air-jordan-1-shadow-og-camo-aa3993-034-now-retail/">Air Jordan 1 Shadow OG Camo AA3993 034 Now Below Retail<img width="1024" height="768" src="https://housakicks.com/wp-content/uploads/2017/08/Air-Jordan-1-Shadow-OG-Camo-AA3993-034-1024x768.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2017/08/Air-Jordan-1-Shadow-OG-Camo-AA3993-034.jpg 1024w, https://housakicks.com/wp-content/uploads/2017/08/Air-Jordan-1-Shadow-OG-Camo-AA3993-034-600x450.jpg 600w, https://housakicks.com/wp-content/uploads/2017/08/Air-Jordan-1-Shadow-OG-Camo-AA3993-034-300x225.jpg 300w, https://housakicks.com/wp-content/uploads/2017/08/Air-Jordan-1-Shadow-OG-Camo-AA3993-034-768x576.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/buy-it-now/air-jordan-1-shadow-og-camo-aa3993-034-now-retail/">Air Jordan 1 Shadow OG Camo AA3993 034 Now Below Retail</a>
+			</h2>
+			<div class="post-byline">August 15, 2017</div>		</div>
+	</article>
+	</div><div class="post-31935 post type-post status-publish format-standard has-post-thumbnail hentry category-buy-it-now category-legit-sneaker-list category-lifestyle tag-saucony tag-saucony-shadow-5000-chocolate-pack tag-saucony-shadwo-5000 entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/buy-it-now/saucony-shadow-5000-chocolate-pack/">Quick Look At The Saucony Shadow 5000 Chocolate Pack<img width="980" height="653" src="https://housakicks.com/wp-content/uploads/2017/04/Saucony-Shadow-5000-Chocolate-Pack.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2017/04/Saucony-Shadow-5000-Chocolate-Pack.jpg 980w, https://housakicks.com/wp-content/uploads/2017/04/Saucony-Shadow-5000-Chocolate-Pack-600x400.jpg 600w, https://housakicks.com/wp-content/uploads/2017/04/Saucony-Shadow-5000-Chocolate-Pack-300x200.jpg 300w, https://housakicks.com/wp-content/uploads/2017/04/Saucony-Shadow-5000-Chocolate-Pack-768x512.jpg 768w" sizes="(max-width: 980px) 100vw, 980px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/buy-it-now/saucony-shadow-5000-chocolate-pack/">Quick Look At The Saucony Shadow 5000 Chocolate Pack</a>
+			</h2>
+			<div class="post-byline">April 19, 2017</div>		</div>
+	</article>
+	</div><div class="post-31360 post type-post status-publish format-standard has-post-thumbnail hentry category-should-you-buy-to-flip tag-saucony-elite-chocolate-pack entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/should-you-buy-to-flip/collect-shadow-5000-elite-chocolate-pack-saucony-working-hard-pay-attention-updated-wunboxing/">Collect This: Shadow 5000 Elite Chocolate Pack | Saucony Is Working Hard So Pay Attention | Updated w/Unboxing<img width="1024" height="284" src="https://housakicks.com/wp-content/uploads/2017/03/home-tertiary-20170315-chocolate-1024x284.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2017/03/home-tertiary-20170315-chocolate-1024x284.jpg 1024w, https://housakicks.com/wp-content/uploads/2017/03/home-tertiary-20170315-chocolate-600x167.jpg 600w, https://housakicks.com/wp-content/uploads/2017/03/home-tertiary-20170315-chocolate-300x83.jpg 300w, https://housakicks.com/wp-content/uploads/2017/03/home-tertiary-20170315-chocolate-768x213.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/should-you-buy-to-flip/collect-shadow-5000-elite-chocolate-pack-saucony-working-hard-pay-attention-updated-wunboxing/">Collect This: Shadow 5000 Elite Chocolate Pack | Saucony Is Working Hard So Pay Attention | Updated w/Unboxing</a>
+			</h2>
+			<div class="post-byline">March 31, 2017</div>		</div>
+	</article>
+	</div><div class="post-31068 post type-post status-publish format-standard has-post-thumbnail hentry category-adidas category-buy-it-now category-legit-sneaker-list category-lifestyle category-running-shoes category-yeezy-350-v2 tag-adidas-shoes tag-adidas-tubular-shadow-cardboard-by3711 tag-adidas-tubular-shadow-knit tag-by3711 entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/buy-it-now/adidas-tubular-shadow-cardboard-by3711/">Quick Look At The Adidas Tubular Shadow Cardboard BY3711<img width="960" height="720" src="https://housakicks.com/wp-content/uploads/2017/03/Adidas-Tubular-Shadow-Cardboard-BY3711-6.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2017/03/Adidas-Tubular-Shadow-Cardboard-BY3711-6.jpg 960w, https://housakicks.com/wp-content/uploads/2017/03/Adidas-Tubular-Shadow-Cardboard-BY3711-6-600x450.jpg 600w, https://housakicks.com/wp-content/uploads/2017/03/Adidas-Tubular-Shadow-Cardboard-BY3711-6-300x225.jpg 300w, https://housakicks.com/wp-content/uploads/2017/03/Adidas-Tubular-Shadow-Cardboard-BY3711-6-768x576.jpg 768w" sizes="(max-width: 960px) 100vw, 960px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/buy-it-now/adidas-tubular-shadow-cardboard-by3711/">Quick Look At The Adidas Tubular Shadow Cardboard BY3711</a>
+			</h2>
+			<div class="post-byline">March 26, 2017</div>		</div>
+	</article>
+	</div><div class="post-30378 post type-post status-publish format-standard has-post-thumbnail hentry category-should-you-buy-to-flip tag-saucony tag-shadow-5k-bricks entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/should-you-buy-to-flip/collect-this-saucony-shadow-5k-bricks-is-the-dopest-release-this-year-arch/">Collect This: Saucony Shadow 5k Bricks Is The Dopest Release This Year – ARCH<img width="1024" height="768" src="https://housakicks.com/wp-content/uploads/2017/03/uploads2F1488822635243-170222_Shadow5000-Bricks-4842-1024x768.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2017/03/uploads2F1488822635243-170222_Shadow5000-Bricks-4842-1024x768.jpg 1024w, https://housakicks.com/wp-content/uploads/2017/03/uploads2F1488822635243-170222_Shadow5000-Bricks-4842-600x450.jpg 600w, https://housakicks.com/wp-content/uploads/2017/03/uploads2F1488822635243-170222_Shadow5000-Bricks-4842-300x225.jpg 300w, https://housakicks.com/wp-content/uploads/2017/03/uploads2F1488822635243-170222_Shadow5000-Bricks-4842-768x576.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/should-you-buy-to-flip/collect-this-saucony-shadow-5k-bricks-is-the-dopest-release-this-year-arch/">Collect This: Saucony Shadow 5k Bricks Is The Dopest Release This Year – ARCH</a>
+			</h2>
+			<div class="post-byline">March 8, 2017</div>		</div>
+	</article>
+	</div><div class="post-30327 post type-post status-publish format-standard has-post-thumbnail hentry category-adidas category-buy-it-now category-legit-sneaker-list category-lifestyle tag-camo-adidas-tubular-shadow tag-camouflage-adidas-tubular-shadow tag-tubular-shadow-camo entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/buy-it-now/camouflage-adidas-tubular-shadow-still-available/">The Camouflage Adidas Tubular Shadow Is Still Available<img width="800" height="533" src="https://housakicks.com/wp-content/uploads/2017/03/Camouflage-Adidas-Tubular-Shadow-BB8818.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2017/03/Camouflage-Adidas-Tubular-Shadow-BB8818.jpg 800w, https://housakicks.com/wp-content/uploads/2017/03/Camouflage-Adidas-Tubular-Shadow-BB8818-600x400.jpg 600w, https://housakicks.com/wp-content/uploads/2017/03/Camouflage-Adidas-Tubular-Shadow-BB8818-300x200.jpg 300w, https://housakicks.com/wp-content/uploads/2017/03/Camouflage-Adidas-Tubular-Shadow-BB8818-768x512.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/buy-it-now/camouflage-adidas-tubular-shadow-still-available/">The Camouflage Adidas Tubular Shadow Is Still Available</a>
+			</h2>
+			<div class="post-byline">March 8, 2017</div>		</div>
+	</article>
+	</div><div class="post-41310 post type-post status-publish format-standard has-post-thumbnail hentry category-basketball-shoes category-buy-it-now category-nike-basketball category-nike-foamposite tag-624041-009 tag-buy-nike-foam-pro-black-gold tag-foamposite tag-nike-air-foamposite-pro-black-gold entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/buy-it-now/quick-look-at-the-nike-air-foamposite-pro-black-gold-buy-it-now/">Quick Look At The Nike Air Foamposite Pro Black Gold| Buy It Now<img width="1024" height="575" src="https://housakicks.com/wp-content/uploads/2018/11/nike-air-foamposite-pro-black-gold-624041-009-1024x575.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/11/nike-air-foamposite-pro-black-gold-624041-009-1024x575.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/11/nike-air-foamposite-pro-black-gold-624041-009-300x168.jpg 300w, https://housakicks.com/wp-content/uploads/2018/11/nike-air-foamposite-pro-black-gold-624041-009-768x431.jpg 768w, https://housakicks.com/wp-content/uploads/2018/11/nike-air-foamposite-pro-black-gold-624041-009.jpg 1106w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/buy-it-now/quick-look-at-the-nike-air-foamposite-pro-black-gold-buy-it-now/">Quick Look At The Nike Air Foamposite Pro Black Gold| Buy It Now</a>
+			</h2>
+			<div class="post-byline">November 17, 2018</div>		</div>
+	</article>
+	</div><div class="post-41087 post type-post status-publish format-standard has-post-thumbnail hentry category-air-jordan category-basketball-shoes category-business category-sneaker-talk tag-goat-signs-kyle-kuzma tag-kuza-sneaker-deal tag-kyle-kuzma-goat entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/basketball-shoes/kyle-kuzma-signs-a-sneaker-deal-with-goat-retailers-still-wont-compete/">Kyle Kuzma Signs A Sneaker Deal With GOAT | Retailers Still Won’t Compete<img width="1024" height="1024" src="https://housakicks.com/wp-content/uploads/2018/10/Kyle-Kuzma-Signs-A-Sneaker-Deal-With-GOAT-Retailers-Still-Wont-Compete-1024x1024.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/10/Kyle-Kuzma-Signs-A-Sneaker-Deal-With-GOAT-Retailers-Still-Wont-Compete-1024x1024.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/10/Kyle-Kuzma-Signs-A-Sneaker-Deal-With-GOAT-Retailers-Still-Wont-Compete-150x150.jpg 150w, https://housakicks.com/wp-content/uploads/2018/10/Kyle-Kuzma-Signs-A-Sneaker-Deal-With-GOAT-Retailers-Still-Wont-Compete-300x300.jpg 300w, https://housakicks.com/wp-content/uploads/2018/10/Kyle-Kuzma-Signs-A-Sneaker-Deal-With-GOAT-Retailers-Still-Wont-Compete-768x768.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/basketball-shoes/kyle-kuzma-signs-a-sneaker-deal-with-goat-retailers-still-wont-compete/">Kyle Kuzma Signs A Sneaker Deal With GOAT | Retailers Still Won’t Compete</a>
+			</h2>
+			<div class="post-byline">October 17, 2018</div>		</div>
+	</article>
+	</div><div class="post-40902 post type-post status-publish format-standard has-post-thumbnail hentry category-air-jordan category-business category-sneaker-talk tag-air-jordan-5-grapes-fresh-prince tag-av3919-135 tag-how-many-pairs-of-fresh-prince-jordan-5 entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/business/how-many-pairs-of-the-air-jordan-5-v-fresh-prince-couldve-been-possibly-made/">How Many Pairs Of The Air Jordan 5 V Fresh Prince Could’ve Been Possibly Made?<img width="1024" height="544" src="https://housakicks.com/wp-content/uploads/2018/09/Air-Jordan-5-V-Fresh-Prince-AV3919-135-1024x544.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/09/Air-Jordan-5-V-Fresh-Prince-AV3919-135-1024x544.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/09/Air-Jordan-5-V-Fresh-Prince-AV3919-135-300x159.jpg 300w, https://housakicks.com/wp-content/uploads/2018/09/Air-Jordan-5-V-Fresh-Prince-AV3919-135-768x408.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/business/how-many-pairs-of-the-air-jordan-5-v-fresh-prince-couldve-been-possibly-made/">How Many Pairs Of The Air Jordan 5 V Fresh Prince Could’ve Been Possibly Made?</a>
+			</h2>
+			<div class="post-byline">September 20, 2018</div>		</div>
+	</article>
+	</div><div class="post-40895 post type-post status-publish format-standard has-post-thumbnail hentry category-air-jordan category-business category-sneaker-talk tag-air-jordan-13-melo tag-air-jordan-melo-canceled tag-class-of-2002-air-jordan-13-melo tag-jordan-13-melo-flaw entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/business/this-is-the-alleged-flaw-on-the-class-of-2002-air-jordan-13-melo-nike-is-still-winning/">This Is The Alleged Flaw On The Class Of 2002 Air Jordan 13 Melo | Nike Is Still Winning<img width="720" height="960" src="https://housakicks.com/wp-content/uploads/2018/09/Alleged-Flaw-On-The-Class-Of-2002-Air-Jordan-13-Melo-1.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/09/Alleged-Flaw-On-The-Class-Of-2002-Air-Jordan-13-Melo-1.jpg 720w, https://housakicks.com/wp-content/uploads/2018/09/Alleged-Flaw-On-The-Class-Of-2002-Air-Jordan-13-Melo-1-225x300.jpg 225w" sizes="(max-width: 720px) 100vw, 720px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/business/this-is-the-alleged-flaw-on-the-class-of-2002-air-jordan-13-melo-nike-is-still-winning/">This Is The Alleged Flaw On The Class Of 2002 Air Jordan 13 Melo | Nike Is Still Winning</a>
+			</h2>
+			<div class="post-byline">September 20, 2018</div>		</div>
+	</article>
+	</div><div class="post-40770 post type-post status-publish format-standard has-post-thumbnail hentry category-air-jordan category-lifestyle category-sneaker-talk tag-air-jordan-1-nigel-sylvester tag-bv1803-106 tag-nigel-aj1 tag-nigel-sylvester-air-jordan-1-hi-og-nrg-bv1803-106 entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/lifestyle/available-now-nigel-sylvester-air-jordan-1-hi-og-nrg-bv1803-106/">Available Now | Nigel Sylvester Air Jordan 1 Hi OG NRG BV1803-106<img width="1024" height="768" src="https://housakicks.com/wp-content/uploads/2018/08/Nigel-Sylvester-Air-Jordan-1-Hi-OG-NRG-BV1803-106-1024x768.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/08/Nigel-Sylvester-Air-Jordan-1-Hi-OG-NRG-BV1803-106-1024x768.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/08/Nigel-Sylvester-Air-Jordan-1-Hi-OG-NRG-BV1803-106-300x225.jpg 300w, https://housakicks.com/wp-content/uploads/2018/08/Nigel-Sylvester-Air-Jordan-1-Hi-OG-NRG-BV1803-106-768x576.jpg 768w, https://housakicks.com/wp-content/uploads/2018/08/Nigel-Sylvester-Air-Jordan-1-Hi-OG-NRG-BV1803-106.jpg 1600w" sizes="(max-width: 1024px) 100vw, 1024px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/lifestyle/available-now-nigel-sylvester-air-jordan-1-hi-og-nrg-bv1803-106/">Available Now | Nigel Sylvester Air Jordan 1 Hi OG NRG BV1803-106</a>
+			</h2>
+			<div class="post-byline">August 30, 2018</div>		</div>
+	</article>
+	</div><div class="post-40738 post type-post status-publish format-standard has-post-thumbnail hentry category-basketball-shoes category-sneaker-talk category-under-armour tag-curry-5-asia tag-curry-5-china-edition tag-ua tag-under-armour-cury-5 entry double">
+		<article>
+		<div class="featured-image"><a href="https://housakicks.com/basketball-shoes/under-armour-ua-curry-5-china-edition-and-steph-asia-tour-info/">Under Armour UA Curry 5 China Edition And Steph Asia Tour Info<img width="800" height="457" src="https://housakicks.com/wp-content/uploads/2018/08/Under-Armour-UA-Curry-5-China-Edition-And-Steph-Asia-Tour-Info.jpg" class="attachment-large size-large wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/08/Under-Armour-UA-Curry-5-China-Edition-And-Steph-Asia-Tour-Info.jpg 800w, https://housakicks.com/wp-content/uploads/2018/08/Under-Armour-UA-Curry-5-China-Edition-And-Steph-Asia-Tour-Info-300x171.jpg 300w, https://housakicks.com/wp-content/uploads/2018/08/Under-Armour-UA-Curry-5-China-Edition-And-Steph-Asia-Tour-Info-768x439.jpg 768w" sizes="(max-width: 800px) 100vw, 800px"></a></div>		<div class="post-header">
+						<h2 class="post-title">
+				<a href="https://housakicks.com/basketball-shoes/under-armour-ua-curry-5-china-edition-and-steph-asia-tour-info/">Under Armour UA Curry 5 China Edition And Steph Asia Tour Info</a>
+			</h2>
+			<div class="post-byline">August 27, 2018</div>		</div>
+	</article>
+	</div>    </div>
+
+
+	<nav class="navigation pagination" role="navigation">
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links"><span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="https://housakicks.com/page/2/?s=shadow">2</a>
+<a class="page-numbers" href="https://housakicks.com/page/3/?s=shadow">3</a>
+<a class="next page-numbers" href="https://housakicks.com/page/2/?s=shadow">Next</a></div>
+	</nav>    <div class="search-box bottom">
+        <p>Can't find what you're looking for?  Try refining your search:</p>
+        <div class="search-form-container">
+    <form role="search" method="get" class="search-form" action="https://housakicks.com">
+        <input id="search-field" type="search" class="search-field" value="" name="s" title="Search" placeholder=" Search for...">
+        <input type="submit" class="search-submit" value="Search">
+    </form>
+</div>    </div>
+</section> <!-- .main -->
+	<aside class="sidebar sidebar-right" id="sidebar-right" role="complementary">
+		<div class="inner">
+			<section id="custom_html-14" class="widget_text widget widget_custom_html"><h2 class="widget-title">Like This Site? Buy Me A Cup Of Coffee</h2><div class="textwidget custom-html-widget"><center><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="XCX4RUAC49ZP8">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+	</center>
+<p align="justify">Housakicks is part of the AHN Network made up of 2 independent websites operated by Chris Burns and Tayib Salami who create content that deliver more value to the sneaker community. We maintain the Network with our own financial resources. If you like what you read and see here, consider supporting the site.Your help is very much appreciated</p></div></section><section id="ct_mission_news_post_list-2" class="widget widget_ct_mission_news_post_list"><div class="style-2"><h2 class="widget-title">Latest Posts</h2><ul><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/lifestyle/off-white-x-nike-zoom-fly-sp-black-and-tulip-pink-how-many-pairs-made-market-value/">Off White x Nike Zoom Fly SP Black And Tulip Pink | How Many Pairs Made| Market Value<img width="300" height="225" src="https://housakicks.com/wp-content/uploads/2018/11/Off-White-x-Nike-Zoom-Fly-SP-Black-And-Pink-How-Many-Pairs-Made-Market-Value-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/11/Off-White-x-Nike-Zoom-Fly-SP-Black-And-Pink-How-Many-Pairs-Made-Market-Value-300x225.jpg 300w, https://housakicks.com/wp-content/uploads/2018/11/Off-White-x-Nike-Zoom-Fly-SP-Black-And-Pink-How-Many-Pairs-Made-Market-Value.jpg 744w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/lifestyle/off-white-x-nike-zoom-fly-sp-black-and-tulip-pink-how-many-pairs-made-market-value/" class="title">Off White x Nike Zoom Fly SP Black And Tulip Pink | How Many Pairs Made| Market Value</a><div class="post-byline">November 26, 2018</div></div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/buy-it-now/nike-sb-janoski-elite-cork-ale-brown-725074-201-available-now/">Nike SB Janoski Elite Cork Ale Brown 725074-201 -Available Now<img width="300" height="225" src="https://housakicks.com/wp-content/uploads/2018/11/Nike-SB-Janoski-Elite-Cork-Ale-Brown-725074-201-300x225.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/11/Nike-SB-Janoski-Elite-Cork-Ale-Brown-725074-201-300x225.jpg 300w, https://housakicks.com/wp-content/uploads/2018/11/Nike-SB-Janoski-Elite-Cork-Ale-Brown-725074-201-768x576.jpg 768w, https://housakicks.com/wp-content/uploads/2018/11/Nike-SB-Janoski-Elite-Cork-Ale-Brown-725074-201.jpg 960w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/buy-it-now/nike-sb-janoski-elite-cork-ale-brown-725074-201-available-now/" class="title">Nike SB Janoski Elite Cork Ale Brown 725074-201 -Available Now</a><div class="post-byline">November 2, 2018</div></div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/buy-it-now/enter-draw-now-for-the-adidas-yeezy-boost-350-v2-zebra-cp9654/">Enter Draw Now For The ADIDAS YEEZY BOOST 350 V2 Zebra CP9654<img width="300" height="300" src="https://housakicks.com/wp-content/uploads/2018/10/ADIDAS-YEEZY-BOOST-350-V2-Zebra-CP9654-300x300.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/10/ADIDAS-YEEZY-BOOST-350-V2-Zebra-CP9654-300x300.jpg 300w, https://housakicks.com/wp-content/uploads/2018/10/ADIDAS-YEEZY-BOOST-350-V2-Zebra-CP9654-150x150.jpg 150w, https://housakicks.com/wp-content/uploads/2018/10/ADIDAS-YEEZY-BOOST-350-V2-Zebra-CP9654.jpg 645w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/buy-it-now/enter-draw-now-for-the-adidas-yeezy-boost-350-v2-zebra-cp9654/" class="title">Enter Draw Now For The ADIDAS YEEZY BOOST 350 V2 Zebra CP9654</a><div class="post-byline">October 30, 2018</div></div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/lifestyle/air-jordan-5-satin-black-red-bred-136027-006-how-many-pairs-made-observations/">Air Jordan 5 Satin Black Red Bred 136027-006| How Many Pairs Made | Observations<img width="300" height="169" src="https://housakicks.com/wp-content/uploads/2018/10/Air-Jordan-5-Satin-Black-Red-Bred-136027-006-how-many-made-4-300x169.jpg" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/10/Air-Jordan-5-Satin-Black-Red-Bred-136027-006-how-many-made-4-300x169.jpg 300w, https://housakicks.com/wp-content/uploads/2018/10/Air-Jordan-5-Satin-Black-Red-Bred-136027-006-how-many-made-4-768x432.jpg 768w, https://housakicks.com/wp-content/uploads/2018/10/Air-Jordan-5-Satin-Black-Red-Bred-136027-006-how-many-made-4-1024x576.jpg 1024w, https://housakicks.com/wp-content/uploads/2018/10/Air-Jordan-5-Satin-Black-Red-Bred-136027-006-how-many-made-4.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/lifestyle/air-jordan-5-satin-black-red-bred-136027-006-how-many-pairs-made-observations/" class="title">Air Jordan 5 Satin Black Red Bred 136027-006| How Many Pairs Made | Observations</a><div class="post-byline">October 30, 2018</div></div></div></li><li class="post-item has-image"><div class="top"><div class="featured-image"><a href="https://housakicks.com/buy-it-now/nike-air-force-1-07-qs-skeleton-bq7541-100-buy-it-now/">Nike Air Force 1 07 QS Skeleton BQ7541-100 | Buy It Now<img width="300" height="237" src="https://housakicks.com/wp-content/uploads/2018/10/Nike-Air-Force-1-07-QS-Skeleton-BQ7541-100-1-300x237.png" class="attachment-medium size-medium wp-post-image" alt="" srcset="https://housakicks.com/wp-content/uploads/2018/10/Nike-Air-Force-1-07-QS-Skeleton-BQ7541-100-1-300x237.png 300w, https://housakicks.com/wp-content/uploads/2018/10/Nike-Air-Force-1-07-QS-Skeleton-BQ7541-100-1.png 500w" sizes="(max-width: 300px) 100vw, 300px"></a></div><div class="top-inner"><a href="https://housakicks.com/buy-it-now/nike-air-force-1-07-qs-skeleton-bq7541-100-buy-it-now/" class="title">Nike Air Force 1 07 QS Skeleton BQ7541-100 | Buy It Now</a><div class="post-byline">October 29, 2018</div></div></div></li></ul></div></section><section id="custom_html-15" class="widget_text widget widget_custom_html"><h2 class="widget-title">Sponsored By</h2><div class="textwidget custom-html-widget"><!-- Ezoic - sidebar top 1 - sidebar -->
+<span id="ezoic-pub-ad-placeholder-101"></span>
+<!-- End Ezoic - sidebar top 1 - sidebar --></div></section><section id="text-99" class="widget widget_text"><h2 class="widget-title">Disclaimer</h2>			<div class="textwidget"><p>Unless otherwise noted, all products reviewed and used on this site have been purchased by us for our own personal use. Please note that if you click and purchase a product through an&nbsp;amazon.com,&nbsp;eBay, or affiliate link, we receive a small amount of money through affiliate programs. This however, does not affect our review of the products. All reviews are based on our honest personal opinions after trying the product.</p>
+</div>
+		</section><section id="ebay_feeds_for_wordpress_widget-7" class="widget widget_ebay_feeds_for_wordpress_widget"><h2 class="widget-title">Buy AJ 1 H2 H Now</h2><div class="ebayfeed"><div class=""><h4 class="ebayfeedtitle"><a class="ebayfeedlink" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=264068902441&amp;vectorid=229466&amp;lgeo=1">Nike Air Jordan 1 Homage to home Authentic Size 10.5  bred chicago half</a></h4><table border="0" cellpadding="8"> <tbody><tr><td> <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=264068902441&amp;vectorid=229466&amp;lgeo=1"><img src="https://thumbs2.ebaystatic.com/m/mEWM1ymgdgMwB_gLV9wSbNg/140.jpg" border="0"></a></td><td><strong>$329.99</strong><br>End Date: Monday Dec-31-2018 21:12:25 PST<br>Buy It Now for only: $329.99<br><a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=264068902441&amp;vectorid=229466&amp;lgeo=1">Buy It Now</a> | <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&amp;toolid=10039&amp;campid=5337900874&amp;vectorid=229466&amp;lgeo=1&amp;mpre=http%3A%2F%2Fcgi1.ebay.com%2Fws%2FeBayISAPI.dll%3FMfcISAPICommand%3DMakeTrack%26item%3D264068902441%26ssPageName%3DRSS%3AB%3ASRCH%3AUS%3A104">Add to watch list</a></td></tr> </tbody></table></div><div class=""><h4 class="ebayfeedtitle"><a class="ebayfeedlink" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=202522107384&amp;vectorid=229466&amp;lgeo=1">Nike Air Jordan Retro 1 HI OG NRG Homage to Home size 5</a></h4><table border="0" cellpadding="8"> <tbody><tr><td> <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=202522107384&amp;vectorid=229466&amp;lgeo=1"><img src="https://thumbs1.ebaystatic.com/m/mSWyT5-MIw4EtU9wKx9Ns8g/140.jpg" border="0"></a></td><td><strong>$500.00</strong><br>End Date: Monday Dec-31-2018 18:54:06 PST<br>Buy It Now for only: $500.00<br><a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=202522107384&amp;vectorid=229466&amp;lgeo=1">Buy It Now</a> | <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&amp;toolid=10039&amp;campid=5337900874&amp;vectorid=229466&amp;lgeo=1&amp;mpre=http%3A%2F%2Fcgi1.ebay.com%2Fws%2FeBayISAPI.dll%3FMfcISAPICommand%3DMakeTrack%26item%3D202522107384%26ssPageName%3DRSS%3AB%3ASRCH%3AUS%3A104">Add to watch list</a></td></tr> </tbody></table></div><div class=""><h4 class="ebayfeedtitle"><a class="ebayfeedlink" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=223266696320&amp;vectorid=229466&amp;lgeo=1">Nike Air Jordan Retro 1 Homage To Home H2H NRG Chicago Bred Banned Size 11.5</a></h4><table border="0" cellpadding="8"> <tbody><tr><td> <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=223266696320&amp;vectorid=229466&amp;lgeo=1"><img src="https://thumbs1.ebaystatic.com/m/mZvr3puALAK1bQQ4WwepcDQ/140.jpg" border="0"></a></td><td><strong>$200.00</strong> (0 Bids)<br>End Date: Saturday Dec-8-2018 17:19:51 PST<br>Buy It Now for only: $300.00<br><a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=223266696320&amp;vectorid=229466&amp;lgeo=1">Buy It Now</a> | <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=223266696320&amp;vectorid=229466&amp;lgeo=1">Bid now</a> | <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&amp;toolid=10039&amp;campid=5337900874&amp;vectorid=229466&amp;lgeo=1&amp;mpre=http%3A%2F%2Fcgi1.ebay.com%2Fws%2FeBayISAPI.dll%3FMfcISAPICommand%3DMakeTrack%26item%3D223266696320%26ssPageName%3DRSS%3AB%3ASRCH%3AUS%3A104">Add to watch list</a></td></tr> </tbody></table></div><div class=""><h4 class="ebayfeedtitle"><a class="ebayfeedlink" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=123521801124&amp;vectorid=229466&amp;lgeo=1">Air Jordan 1 Retro High OG Homage To Home Mens Size 11.5 Bred Chicago New</a></h4><table border="0" cellpadding="8"> <tbody><tr><td> <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=123521801124&amp;vectorid=229466&amp;lgeo=1"><img src="https://thumbs1.ebaystatic.com/m/mXDqirytwWtik0JzvHMH_gA/140.jpg" border="0"></a></td><td><strong>$299.99</strong><br>End Date: Monday Dec-31-2018 16:24:15 PST<br>Buy It Now for only: $299.99<br><a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=123521801124&amp;vectorid=229466&amp;lgeo=1">Buy It Now</a> | <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&amp;toolid=10039&amp;campid=5337900874&amp;vectorid=229466&amp;lgeo=1&amp;mpre=http%3A%2F%2Fcgi1.ebay.com%2Fws%2FeBayISAPI.dll%3FMfcISAPICommand%3DMakeTrack%26item%3D123521801124%26ssPageName%3DRSS%3AB%3ASRCH%3AUS%3A104">Add to watch list</a></td></tr> </tbody></table></div><div class=""><h4 class="ebayfeedtitle"><a class="ebayfeedlink" href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=273589565175&amp;vectorid=229466&amp;lgeo=1">Air Jordan 1 Retro High OG NRG 'Homage to Home' 861428 061 Size 10</a></h4><table border="0" cellpadding="8"> <tbody><tr><td> <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=273589565175&amp;vectorid=229466&amp;lgeo=1"><img src="https://thumbs4.ebaystatic.com/m/mpM5AF5o0gdxHAK0a7nODWA/140.jpg" border="0"></a></td><td><strong>$269.80</strong><br>End Date: Monday Dec-31-2018 14:04:33 PST<br>Buy It Now for only: $269.80<br><a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=2&amp;toolid=10039&amp;campid=5337900874&amp;item=273589565175&amp;vectorid=229466&amp;lgeo=1">Buy It Now</a> | <a href="http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&amp;toolid=10039&amp;campid=5337900874&amp;vectorid=229466&amp;lgeo=1&amp;mpre=http%3A%2F%2Fcgi1.ebay.com%2Fws%2FeBayISAPI.dll%3FMfcISAPICommand%3DMakeTrack%26item%3D273589565175%26ssPageName%3DRSS%3AB%3ASRCH%3AUS%3A104">Add to watch list</a></td></tr> </tbody></table></div></div></section><section id="meta-7" class="widget widget_meta"><h2 class="widget-title">Meta</h2>			<ul>
+						<li><a href="https://housakicks.com/wp-login.php">Log in</a></li>
+			<li><a href="https://housakicks.com/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://housakicks.com/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</section><section id="custom_html-16" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><!-- Ezoic - sidebar top 1 - sidebar -->
+
+<!-- End Ezoic - sidebar top 1 - sidebar --></div></section>		<span id="ezoic-pub-ad-placeholder-107" class="ezoic-adpicker-ad"></span><span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:270px;min-width:250px;text-align:center !important;' class='ezoic-ad large-leaderboard-1 adtester-container adtester-container-107' data-ez-name='housakicks_com-large-leaderboard-1'><span id='div-gpt-ad-housakicks_com-large-leaderboard-1-0' ezaw='250' ezah='250' style='position:relative;z-index:0;display:inline-block;min-height:250px;min-width:250px;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[250,250],'housakicks_com-large-leaderboard-1','ezslot_2']));</script></span><span style='width:250px;display:block;height:14px;margin:auto' class='reportline'><span style='text-align:center;font-size: smaller;float:left;line-height:normal;'><a href='https://www.ezoic.com/what-is-ezoic/' target='_blank' style='cursor:pointer'/><img src='https://d3hwh14livah35.cloudfront.net/ezoic.png' style='height:12px !important; padding:2px !important; border:0px !important; cursor:pointer !important; width: 58px !important; margin:0 !important; box-sizing: content-box !important;'/></a></span><span id="ez-report-ad-button" name="?pageview_id=26b61cf0-718b-45d8-7f87-f43ce85c689e&ad_position_id=107&impression_group_id=housakicks_com-large-leaderboard-1/2018-12-02/1386580&ad_size=250x250&domain_id=84945&url=https://housakicks.com/?s=shadow" style='cursor: pointer!important; font-size:12px !important;color: #a5a5a5 ;float:right;text-decoration:none !important;font-family:arial !important;line-height:normal;'>report this ad</span></span></span></div>
+	</aside>
+</div><!-- layout-container -->
+</div><!-- content-container -->
+
+<footer id="site-footer" class="site-footer" role="contentinfo"><span id="ezoic-pub-ad-placeholder-120" class="ezoic-adpicker-ad"></span>
+        <div class="footer-title-container">
+        <div class="site-title"><a href="https://housakicks.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="100" height="63" src="https://housakicks.com/wp-content/uploads/2016/04/logo1-3.png" class="custom-logo" alt="Housakicks" itemprop="logo"></a></div>        <p class="footer-tagline">From the Community, For The Community</p>        <ul class="social-media-icons"><li>					<a class="twitter" target="_blank" href="https://twitter.com/housakicks">
+						<i class="fab fa-twitter" title="twitter"></i>
+					</a>
+					</li><li>					<a class="facebook" target="_blank" href="https://www.facebook.com/housakicks/">
+						<i class="fab fa-facebook" title="facebook"></i>
+					</a>
+					</li><li>					<a class="instagram" target="_blank" href="https://www.instagram.com/housakicks/">
+						<i class="fab fa-instagram" title="instagram"></i>
+					</a>
+					</li><li>					<a class="linkedin" target="_blank" href="https://www.linkedin.com/in/tayib-salami-20ba6847/">
+						<i class="fab fa-linkedin" title="linkedin"></i>
+					</a>
+					</li><li>					<a class="pinterest" target="_blank" href="https://www.pinterest.com/housakicks/pins/">
+						<i class="fab fa-pinterest" title="pinterest"></i>
+					</a>
+					</li><li>					<a class="google-plus" target="_blank" href="https://plus.google.com/101801653941869713849">
+						<i class="fab fa-google-plus" title="google-plus"></i>
+					</a>
+					</li><li>					<a class="youtube" target="_blank" href="https://www.youtube.com/channel/UCZPKChfkPh5p_RFN3A39aog?view_as=subscriber">
+						<i class="fab fa-youtube" title="youtube"></i>
+					</a>
+					</li><li>					<a class="email" target="_blank" href="mailto:mistourasal@gmail.com">
+						<i class="fas fa-envelope" title="email"></i>
+					</a>
+				</li></ul>    </div>
+    <div id="menu-footer-container" class="menu-footer-container">
+        <div id="menu-footer" class="menu-container menu-footer" role="navigation">
+	</div>
+    </div>
+    	<aside id="site-footer-widgets" class="widget-area widget-area-site-footer active-1" role="complementary">
+		<section id="media_image-4" class="widget widget_media_image"><figure style="width: 160px" class="wp-caption alignnone"><a href="https://arch-usa.com/welcome-to-arch/"><img width="160" height="65" src="https://housakicks.com/wp-content/uploads/2018/10/AHN_Logo_10-18small.png" class="image wp-image-41053  attachment-full size-full" alt="" style="max-width: 100%; height: auto;"></a><figcaption class="wp-caption-text">ARCH x Housakicks Network</figcaption></figure></section>	</aside>
+    <div class="design-credit">
+        <span>
+            <a href="https://www.competethemes.com/mission-news/">Mission News Theme</a> by Compete Themes.        </span>
+    </div>
+    <span id="ezoic-pub-ad-placeholder-121" class="ezoic-adpicker-ad"></span></footer>
+</div><!-- .max-width -->
+</div><!-- .overflow-container -->
+
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"www-housakicks-com"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://housakicks.com/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.16'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mission_news_objectL10n = {"openMenu":"open menu","closeMenu":"close menu","openChildMenu":"open dropdown menu","closeChildMenu":"close dropdown menu"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://housakicks.com/wp-content/themes/mission-news/js/build/production.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://housakicks.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpbh'},{'server':'p3plvcpnl53987'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 674/953 objects using disk
+Page Caching using disk: enhanced (Requested URI contains query) 
+Database Caching 1/22 queries in 0.166 seconds using disk
+
+Served from: housakicks.com @ 2018-12-02 17:48:06 by W3 Total Cache
+-->
+		<!-- Ezoic - Anchor Ad - bottom_floating -->
+		<div class="ezmob-footer ezoic-floating-bottom ezo_ad ezmob-footer-desktop" id="ezmobfooter"><center><span id="ezoic-pub-ad-placeholder-100"></span>
+		<!-- Ezoic - Anchor Ad - bottom_floating -->
+		<div class="ezmob-footer ezoic-floating-bottom ezo_ad ezmob-footer-desktop" id="ezmobfooter"><center><span style='display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:90px;min-width:970px;' class='ezoic-ad medrectangle-2 adtester-container adtester-container-100' data-ez-name='housakicks_com-medrectangle-2'><span id='div-gpt-ad-housakicks_com-medrectangle-2-0' ezaw='970' ezah='90' style='position:relative;z-index:0;display:inline-block;min-height:90px;min-width:970px;' class='ezoic-ad'><script data-cfasync='false' type='text/javascript' style='display:none;'>eval(ez_write_tag([[970,90],'housakicks_com-medrectangle-2','ezslot_4']));</script></span></span></center><span class='ezmob-footer-close' onclick="document.getElementById('ezmobfooter').style.display='none';">x</span></div>
+		<!-- End Ezoic - Anchor Ad - bottom_floating -->
+		</center><span class='ezmob-footer-close' onclick="document.getElementById('ezmobfooter').style.display='none';">x</span></div>
+		<!-- End Ezoic - Anchor Ad - bottom_floating -->
+		<script type="text/javascript" style='display:none;'>
+var __ez_dims = (function() {
+	var setCookie = function( name, content, expiry ) {
+		return document.cookie = name+'='+content+((expiry)?';expires='+(new Date(Math.floor(new Date().getTime()+expiry*1000)).toUTCString()):'');
+	};
+	var ffid = 1;
+	var oh = window.screen.height;
+	var ow = window.screen.width;
+	var h = ffid === 1 ? oh : (oh > ow) ? oh : ow;
+	var w = ffid === 1 ? ow : (oh > ow) ? ow : oh;
+	var uh = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+	var uw = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
+	setCookie('ezds', encodeURIComponent('ffid='+ffid+',w='+w+',h='+h), (31536e3*7));
+	setCookie('ezohw', encodeURIComponent('w='+uw+',h='+uh), (31536e3*7));
+})();
+</script><script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=182-0&shcb=31', true, [], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=182-0&shcb=31', false, [], true, false, false, false);
+</script>
+
+<script type='text/javascript' style='display:none;' async>__ez.queue.addFile('anchorfix.js', '/ezoic/anchorfix.js?v1', false, [], true, true, true, false);</script>
+
+		<script type="text/javascript">
+		(function(f,a){function g(b,a,c){b.addEventListener?b.addEventListener(a,c):b.attachEvent("on"+a,function(){c.call(b)})}function k(b){b&&("string"==typeof b["class"]&&b["class"]&&a.getElementById("uglipop_popbox").setAttribute("class",b["class"]),b.keepLayout&&!b["class"]&&a.getElementById("uglipop_popbox").setAttribute("style","position:relative;height:300px;width:300px;background-color:white;opacity:1;"),"string"==typeof b.content&&b.content&&"html"==b.source&&(a.getElementById("uglipop_popbox").innerHTML=b.content),"string"==typeof b.content&&b.content&&"div"==b.source&&(a.getElementById("uglipop_popbox").innerHTML=a.getElementById(b.content).innerHTML));a.getElementById("uglipop_overlay_wrapper").style.display="";a.getElementById("uglipop_overlay").style.display="";a.getElementById("uglipop_content_fixed").style.display=""}function h(){a.getElementById("uglipop_overlay_wrapper").style.display="none";a.getElementById("uglipop_overlay").style.display="none";a.getElementById("uglipop_content_fixed").style.display="none"}g(a,"DOMContentLoaded",function(){var b=a.createElement("div"),e=a.createElement("div"),c=a.createElement("div"),d=a.createElement("div");e.id="uglipop_content_fixed";e.setAttribute("style","position:fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);opacity:1;z-index:10000000;");c.id="uglipop_popbox";d.id="uglipop_overlay_wrapper";d.setAttribute("style","position:absolute;top:0;bottom:0;left:0;right:0;display:none");b.id="uglipop_overlay";b.setAttribute("style","position:fixed;top:0;bottom:0;left:0;right:0;opacity:0.3;width:100%;height:100%;background-color:black;");d.appendChild(b);e.appendChild(c);a.body.appendChild(d);a.body.appendChild(e);a.getElementById("uglipop_overlay_wrapper").style.display="none";a.getElementById("uglipop_overlay").style.display="none";a.getElementById("uglipop_content_fixed").style.display="none";d.addEventListener("click",h);g(f,"keydown",function(a){27==a.keyCode&&h()});f.uglipop=k})})(window,document);
+			var ezRBA = (function() {
+			  function init() {
+				var reportAdsBtns = document.querySelectorAll('#ez-report-ad-button');
+				for (var i = 0; i < reportAdsBtns.length; i++) {
+				  reportAdsBtns[i].addEventListener('click', function(e) {
+					var url = '<iframe src="https://ezoic.com/pub/reportads.html' + e.target.getAttribute('name') + '" width="400" height="500" style="border-radius: 10px; box-shadow: 2px 2px 30px 6px rgba(0,0,0,0.75); border: 1px solid black;"></iframe>'
+					uglipop({
+					  class: 'none',
+					  source: 'html',
+					  content: url,
+					});
+				  });
+				}
+				function bindEvent(element, eventName, eventHandler) {
+					if (element.addEventListener) {
+						element.addEventListener(eventName, eventHandler, false);
+					} else if (element.attachEvent) {
+						element.attachEvent('on' + eventName, eventHandler);
+					}
+				}
+				bindEvent(window, 'message', function(e) {
+					if (e.data === 'close-report-ad-modal') {
+						document.getElementById('uglipop_overlay_wrapper').style.display = 'none';	
+						document.getElementById('uglipop_overlay').style.display = 'none';	
+						document.getElementById('uglipop_content_fixed').style.display = 'none';	
+					}
+				})
+			  }
+
+			  return {
+				init: init
+			  };
+			})();
+			ezRBA.init();
+		</script>
+
+<div id='dmo1' style='display:none'>
+	<script type="text/javascript"><!--
+		google_ad_client = "ca-pub-6396844742497208";
+		/* dmo */
+		google_ad_slot = "dmo";
+		google_ad_width = 88;
+		google_ad_height = 31;
+		//-->
+	</script>
+	<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</div>
+
+<!--Begin comScore Tag--><script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"20015427"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el)})();</script><noscript><img src="https://sb.scorecardresearch.com/p?c1=2&c2=20015427&cv=2.0&cj=1"/></noscript><!--End comScore Tag-->
+<!--Quantcast Tag--><script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt)})();_qevents.push({qacct:"p-31iz6hfFutd16",labels:"Domain.housakicks_com,DomainId.84945"});</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.housakicks_com,DomainId.84945"border="0"height="1"width="1"alt="Quantcast"/></div></noscript><!--End Quantcast tag--></body></html><!--[selectron:done]-->
