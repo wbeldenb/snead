@@ -1,0 +1,11 @@
+To retrain: 
+
+	run tensorflow_example/retrain.py on /data folder.
+	
+	Windows:
+	run retrain_and_label.py batch file
+
+To label image:
+	run tensorflow_example/label_image.py on test image
+
+retrain.py and label_image.py are provided by Google Tensorflow Hub
